@@ -1,0 +1,145 @@
+/*
+* @subsection   RD Navbar
+*
+* @description  Describes style declarations for RD Navbar extension
+*
+* @author       Evgeniy Gusarov
+* @link         https://ua.linkedin.com/pub/evgeniy-gusarov/8a/a40/54a
+*/
+@import "rd-navbar_includes/_rd-navbar-mixins.scss";
+
+/*
+* @subsection General Styles
+*/
+
+// RD Navbar Basics
+%rd-navbar-transition {
+  transition: .3s all cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+%rd-navbar-hidden {
+  display: none;
+}
+
+%rd-navbar-visible {
+  display: block;
+}
+
+.rd-navbar--no-transition {
+  &, * {
+    transition: none !important;
+  }
+}
+
+.rd-navbar-wrap {
+  @extend %rd-navbar-transition;
+}
+
+.rd-navbar, .rd-navbar.rd-navbar--is-clone {
+  @extend %rd-navbar-hidden;
+}
+
+.rd-navbar-fixed,
+.rd-navbar-static,
+.rd-navbar-fullwidth,
+.rd-navbar-sidebar {
+  @extend %rd-navbar-visible;
+  * {
+    @include transition(.3s ease-out all);
+  }
+}
+
+.rd-navbar-wrap,
+.rd-navbar,
+.rd-navbar-brand,
+.rd-navbar-slogan,
+.rd-navbar-dropdown,
+.rd-navbar-megamenu,
+.rd-navbar-collapse-items,
+.brand-name,
+.rd-navbar-nav,
+.rd-navbar-panel,
+.rd-navbar-search-form-input,
+.rd-navbar-search-form-submit,
+.rd-navbar-search-toggle,
+.rd-navbar-live-search-results,
+.rd-navbar-search-form {
+  transition: .3s all ease;
+}
+
+
+// RD Navbar States
+.rd-navbar--has-sidebar {
+  body {
+    padding-left: 270px;
+  }
+}
+
+.rd-navbar--is-stuck {
+  box-shadow: $rd-navbar-shadow;
+}
+
+.rd-navbar.rd-navbar-fixed + .rd-navbar.rd-navbar--is-clone,
+.rd-navbar.rd-navbar-sidebar + .rd-navbar.rd-navbar--is-clone {
+  display: none;
+}
+
+@import "rd-navbar_includes/_rd-navbar-components.scss";
+
+/*
+* @subsection   Hybrid  Styles
+*/
+
+
+//=============      Fixed & Sidebar      ================
+.rd-navbar-fixed,
+.rd-navbar-sidebar {
+
+  // RD Navbar Dropdown
+  .rd-navbar-dropdown {
+    display: block;
+  }
+}
+
+
+
+.rd-navbar-fixed,
+.rd-navbar-static,
+.rd-navbar-fullwidth {
+  font-family: $font-family-base;
+  font-weight: 500;
+}
+
+
+
+
+@import "rd-navbar_includes/_rd-navbar-static.scss";
+@import "rd-navbar_includes/_rd-navbar-fullwidth.scss";
+@import "rd-navbar_includes/_rd-navbar-fixed.scss";
+@import "rd-navbar_includes/_rd-navbar-sidebar.scss";
+
+/*
+* @subsection   Page boxed layout style redeclaration
+*
+* @description  Redefines navbar style inside boxed layout
+*
+* @see          ../modules/_page-layouts.scss
+*/
+html.boxed {
+  &.rd-navbar--has-sidebar {
+    body {
+      padding-left: $rd-navbar-nav-min-width + 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .rd-navbar--is-clone {
+    max-width: $layout-boxed-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  padding-left: 0;
+}

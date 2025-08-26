@@ -1,0 +1,56 @@
+# core_min:
+#  js:
+#    js/core.min.js: {}
+
+scripts:
+  js:
+    js/core.min.js: {}
+    '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js': { external: true, minified: true, async: true, defer: true }
+    js/html5shiv.min.js: {}
+    js/pointer-events.min.js: {}
+    js/script.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - big_pipe/big_pipe
+    - core/drupal.form
+    - core/drupal
+    - webform/webform.states
+    - webform/webform.form
+    - webform/webform.ajax
+    - webform/webform.dialog
+    - webform/webform.jquery.ui.dialog
+    - webform/webform.element.message
+    - webform/webform.element.details.toggle
+    - webform/webform.element.details.save
+    #- webform/webform.element.announce
+    #- webform/webform.element.computed
+    #- webform/webform.element.help
+    #- webform/webform.element.more
+    #- webform/webform.tooltip
+    #- webform/webform.element.select
+    #- webform/webform.element.choices
+
+styles:
+  css:
+    theme:
+      'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css': { external: true, async: true, defer: true }
+      /themes/contrib/material_base/css/flexboxgrid.css: {}
+      css/styles.css: {}
+      css/style.css: {}
+
+calc:
+  css:
+    theme:
+      css/calc.css: {}
+
+product-calc:
+  js:
+    js/product-calc.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - big_pipe/big_pipe
+    - core/drupal.form
+    - core/drupal

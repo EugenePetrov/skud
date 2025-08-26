@@ -1,0 +1,78 @@
+//Table Custom
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 12px 20px;
+  @media (min-width: $screen-sm-min) {
+    padding: $table-cell-padding;
+  }
+}
+
+.table.table-hover {
+  thead {
+    td {
+      padding: 20px 36px 13px;
+      font-size: 18px;
+      color: $gray-darker;
+    }
+    & + tbody {
+      > tr:first-child {
+        td {
+          border-width: 2px;
+          border-color: $gray-darker;
+        }
+      }
+    }
+  }
+  tfoot {
+    td {
+      font-weight: 500;
+      color: $gray-darker;
+      border-bottom: 1px solid $table-border-color;
+    }
+  }
+}
+
+.table.table-header {
+  thead {
+    td {
+      font-size: 18px;
+      color: $white;
+      background-color: $gray-darker;
+    }
+  }
+  tbody {
+    tr:nth-child(odd) {
+      > td {
+        background-color: $table-bg-hover;
+      }
+    }
+  }
+  tfoot {
+    td {
+      font-weight: 500;
+      color: $gray-darker;
+      background-color: $table-bg-hover;
+      border-bottom: 1px solid $table-border-color;
+    }
+  }
+}
+
+.table.table-border {
+  border: 1px solid $table-border-color;
+  td + td {
+    border-left: 1px solid $table-border-color;
+  }
+  thead {
+    td {
+      font-size: 18px;
+      color: $gray-darker;
+    }
+  }
+  tfoot {
+    td {
+      font-weight: 500;
+      color: $gray-darker;
+
+    }
+  }
+}

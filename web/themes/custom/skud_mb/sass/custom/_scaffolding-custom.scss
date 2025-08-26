@@ -1,0 +1,159 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+// Body styles
+// --------------------------------------------------
+
+body {
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 1.625;
+  -webkit-text-size-adjust: none;
+  color: $text-color;
+  background-color: $body-bg;
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+// Page styles
+// --------------------------------------------------
+
+.page {
+  overflow: hidden;
+  background-color: $content-bg;
+}
+
+//Page Header
+.page-head {
+  position: relative;
+  z-index: 1000;
+  min-height: 1px;
+}
+
+//Page Content
+
+.page-content {
+}
+
+//Page Footer
+
+.page-footer {
+  background-color: $footer-bg;
+  &-default {
+    @include bg-variant-custom(#{$brand-shark});
+    position: relative;
+    @extend .contact-darker;
+  }
+  .form-validation {
+    top: 4px;
+    right: 6px;
+  }
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive(inline-block);
+}
+
+.img-circle {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+// Links
+
+// Links
+a {
+  @include transition(.3s ease-out all);
+  &,
+  &:active,
+  &:focus {
+    color: $link-color;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+  margin: 0;
+}
+
+// Horizontal rules
+
+hr {
+  &.divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid $hr-border;
+    &-mine-shaft {
+      border-color: $gray-mine-shaft;
+    }
+  }
+}
+
+.divider-1 {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 109px;
+    border-top: 5px solid $brand-patina;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  * + & { margin-top: 20px; }
+  @media (min-width: $screen-md) {
+    * + & { margin-top: 41px; }
+  }
+}
+
+.divider-custom {
+  margin: 25px 0;
+  height: 70px;
+  width: 1px;
+  border-left: 1px solid $hr-border;
+}
+
+.divider-block {
+  @media (min-width: $screen-lg-min) {
+    position: relative;
+    padding-left: 85px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 23px;
+      left: 0;
+      width: 70px;
+      border-top: 1px solid $hr-border;
+    }
+  }
+  @media (min-width: $screen-xl-min) {
+    padding-left: 125px;
+    &:before {
+      width: 95px;
+    }
+  }
+}

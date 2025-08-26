@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Default theme implementation for webform email wrapper template as HTML.
+ *
+ * Available variables:
+ * - message: The email message which contains to, from, subject, message, etc…
+ * - webform_submission: The webform submission.
+ * - handler: The webform handler.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if handler.HandlerId == 'email' %}
+<table width="100%">   
+  <colgroup width="30%"></colgroup>
+  <colgroup width="70%"></colgroup>
+  <tr>
+    <td>
+      <div>
+        <div style="margin-bottom:10px"><img src="https://skud.agrg.ru/themes/custom/skud_mb/images/Logo-Main-1-1.png" width="64"></div>
+        <div style="font-size: 12px;line-height: 14px;">Общество с ограниченной ответственностью «Агрегатор»</div>
+      </div>
+    </td>
+    <td style="text-align: right;">
+      <div style="font-size: 16px;line-height: 24px;">
+        <a href="tel:+74959889116" style="text-decoration:none">+7(495)988-91-16</a><br/>
+        <a href="mailto:info@agrg.ru" style="text-decoration:none">info@agrg.ru</a><br/>
+        <a href="//skud.agrg.ru" style="text-decoration:none">skud.agrg.ru</a>
+      </div>
+      <div style="font-size: 11px;">129343, Российская Федерация, г. Москва, проезд Серебрякова, д. 8, второй этаж
+      </div>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<h2>Коммерческое предложение №{{ webform_token('[webform_submission:serial]', webform_submission) }} от {{ webform_token('[webform_submission:completed:custom:d F Y]', webform_submission) }}
+</h2>
+<p>Компания «Агрегатор» выражает Вам свое почтение и направляет коммерческое предложение, подготовленное на основе Ваших расчетов в <a href="//skud.agrg.ru/calcs/kalkulyator-skud-na-dveri">калькуляторе СКУД</a>.</p>
+
+{% elseif handler.HandlerId == 'email_planfix' or handler.HandlerId =='pf_test'  %}
+Рассчитать как-нибудь: {{ webform_token('[webform_submission:values:fake]', webform_submission) }}<br/>
+ОТ-EMAIL: {{ webform_token('[webform_submission:values:email]', webform_submission) }}<br/>
+Имя: {{ webform_token('[webform_submission:values:imya]', webform_submission) }}<br/>
+Фамилия: {{ webform_token('[webform_submission:values:familiya]', webform_submission) }}<br/>
+{% if webform_token('[webform_submission:values:phone]', webform_submission) %}
+Teлефон: {{ webform_token('[webform_submission:values:phone]', webform_submission) }}<br/>
+{% endif %}
+<br/>
+начало заказа<br/>
+{% endif %}
+
+{{ message.body }}
+
+{% if handler.HandlerId == 'email_planfix' %}
+  <br/>
+  конец заказа
+{% endif %}

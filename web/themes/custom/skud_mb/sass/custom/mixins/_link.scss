@@ -1,0 +1,12 @@
+// Link
+
+@mixin link($color, $color-hover) {
+  @if ($color != '' and $color != null and $color-hover != '' and $color-hover != null) {
+    &, &:focus, &:active {
+      color: $color;
+    }
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}
