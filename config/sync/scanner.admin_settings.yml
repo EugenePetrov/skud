@@ -1,0 +1,41 @@
+scanner_mode: false
+scanner_regex: false
+scanner_wholeword: false
+scanner_published: false
+scanner_pathauto: false
+scanner_language: ru
+enabled_content_types:
+  'node:article': 'node:article'
+  'node:calc': 'node:calc'
+  'node:novost': 'node:novost'
+  'node:page': 'node:page'
+  'node:produkt': 'node:produkt'
+  'node:resheniya': 'node:resheniya'
+  'node:testimonial': 'node:testimonial'
+  'node:webform': 'node:webform'
+  'paragraph:gotovye_resheniya': 'paragraph:gotovye_resheniya'
+fields_of_selected_content_type:
+  'node:article:title': 'node:article:title'
+  'node:article:body': 'node:article:body'
+  'node:article:field_intro': 'node:article:field_intro'
+  'node:calc:body': 'node:calc:body'
+  'node:novost:title': 'node:novost:title'
+  'node:novost:body': 'node:novost:body'
+  'node:page:title': 'node:page:title'
+  'node:page:body': 'node:page:body'
+  'node:page:field_intro': 'node:page:field_intro'
+  'node:produkt:title': 'node:produkt:title'
+  'node:produkt:body': 'node:produkt:body'
+  'node:produkt:field_doc_description': 'node:produkt:field_doc_description'
+  'node:produkt:field_intro': 'node:produkt:field_intro'
+  'node:produkt:field_intro_long': 'node:produkt:field_intro_long'
+  'node:produkt:field_tekst_pod_kartinkoy_sprava': 'node:produkt:field_tekst_pod_kartinkoy_sprava'
+  'node:resheniya:title': 'node:resheniya:title'
+  'node:resheniya:body': 'node:resheniya:body'
+  'node:resheniya:field_intro_solutions': 'node:resheniya:field_intro_solutions'
+  'node:testimonial:body': 'node:testimonial:body'
+  'paragraph:gotovye_resheniya:field_nazvanie_resheniya': 'paragraph:gotovye_resheniya:field_nazvanie_resheniya'
+  'paragraph:gotovye_resheniya:field_opisanie_resheniya': 'paragraph:gotovye_resheniya:field_opisanie_resheniya'
+  'paragraph:gotovye_resheniya:field_smeta': 'paragraph:gotovye_resheniya:field_smeta'
+  'paragraph:gotovye_resheniya:field_stoimost': 'paragraph:gotovye_resheniya:field_stoimost'
+langcode: ru

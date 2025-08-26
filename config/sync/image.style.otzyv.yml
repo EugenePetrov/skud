@@ -1,0 +1,15 @@
+uuid: ba086b88-fc5b-45af-83b7-c0a970aeee95
+langcode: ru
+status: true
+dependencies: {  }
+name: otzyv
+label: 'Отзыв (70 х 70)'
+effects:
+  88d3e830-63ad-4bcf-8f0f-ca9c0c279505:
+    uuid: 88d3e830-63ad-4bcf-8f0f-ca9c0c279505
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 70
+      height: 70
+      anchor: center-center

@@ -1,0 +1,7 @@
+uuid: 589007a6-6910-4a58-9b5f-d8e06fb9e3b6
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_calc_form
+captchaType: default
+label: null

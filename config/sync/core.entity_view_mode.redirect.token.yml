@@ -1,0 +1,10 @@
+uuid: 9e4021c3-e7c2-4556-8069-bfcf644723c7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.token
+label: Токен
+targetEntityType: redirect
+cache: true

@@ -1,0 +1,29 @@
+uuid: 16d71b0a-2da7-4990-80e9-f1ed1755852a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - material_compile
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-branding'
+_core:
+  default_config_hash: qNdBRt3iBuuN5KfqglVCe4_5-jzvMcLMWObZ5IDyTGs
+id: material_compile_branding
+theme: material_compile
+region: navbar
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

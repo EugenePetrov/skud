@@ -1,0 +1,19 @@
+uuid: 2aa6663b-fdda-49ef-8f65-d2b8d6f4b05c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maksimalnoe_potreblenie_ma
+    - node.type.produkt
+id: node.produkt.field_maksimalnoe_potreblenie_ma
+field_name: field_maksimalnoe_potreblenie_ma
+entity_type: node
+bundle: produkt
+label: 'Максимальное потребление, мА'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

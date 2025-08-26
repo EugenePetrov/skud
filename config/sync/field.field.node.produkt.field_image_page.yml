@@ -1,0 +1,38 @@
+uuid: 52f38538-c611-4b1f-b9dc-53cdfd5f4ccc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_page
+    - node.type.produkt
+  module:
+    - image
+id: node.produkt.field_image_page
+field_name: field_image_page
+entity_type: node
+bundle: produkt
+label: 'Изображение справа на странице'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

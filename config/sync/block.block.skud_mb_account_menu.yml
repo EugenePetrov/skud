@@ -1,0 +1,31 @@
+uuid: a8bc3d94-0342-4500-bb48-4c6b0582a361
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - system
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-account-menu pull-right'
+_core:
+  default_config_hash: iDBRmKsm0JdWrVtvdxvmXuDnU-nKCJcNYeNkzhxo9hY
+id: skud_mb_account_menu
+theme: skud_mb
+region: navbar
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

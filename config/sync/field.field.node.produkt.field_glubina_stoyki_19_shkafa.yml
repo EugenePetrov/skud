@@ -1,0 +1,21 @@
+uuid: ab5dff76-e018-460a-9828-c23bb1921957
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_glubina_stoyki_19_shkafa
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_glubina_stoyki_19_shkafa
+field_name: field_glubina_stoyki_19_shkafa
+entity_type: node
+bundle: produkt
+label: 'Глубина стойки 19" / шкафа'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

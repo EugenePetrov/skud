@@ -1,0 +1,21 @@
+uuid: fe3ab17c-51be-453c-8131-0b39364dd609
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vstroennyy_akkumulyator
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_vstroennyy_akkumulyator
+field_name: field_vstroennyy_akkumulyator
+entity_type: node
+bundle: produkt
+label: 'Встроенный аккумулятор'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

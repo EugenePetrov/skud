@@ -1,0 +1,23 @@
+uuid: c1668e70-11c6-4bb9-baf9-16897e182e4a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: pathau
+label: 'Pathauto Page & Article'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:title]/[node:title]'
+selection_criteria:
+  2530c200-2420-49e4-9610-7b4cf1002076:
+    id: node_type
+    bundles:
+      page: page
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2530c200-2420-49e4-9610-7b4cf1002076
+selection_logic: and
+weight: -5
+relationships: {  }

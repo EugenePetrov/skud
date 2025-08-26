@@ -1,0 +1,35 @@
+uuid: 3853e02d-90ba-4c64-874a-8952f2013cea
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b5ef5b3-898d-4b8c-a4a9-40a3ed83c5fe'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-search-toggle'
+id: skud_mb_navbarsearchtoggle
+theme: skud_mb
+region: navbar
+weight: -12
+provider: null
+plugin: 'block_content:0b5ef5b3-898d-4b8c-a4a9-40a3ed83c5fe'
+settings:
+  id: 'block_content:0b5ef5b3-898d-4b8c-a4a9-40a3ed83c5fe'
+  label: navbar-search-toggle
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: true
+    context_mapping: {  }

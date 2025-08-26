@@ -1,0 +1,22 @@
+uuid: 33abfea8-cb52-4589-b571-88b12f64dc34
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_news
+label: 'Pathauto News'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  f3aa616d-bf20-4eb9-a0ff-0f2980f8e0db:
+    id: node_type
+    bundles:
+      novost: novost
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f3aa616d-bf20-4eb9-a0ff-0f2980f8e0db
+selection_logic: and
+weight: -5
+relationships: {  }

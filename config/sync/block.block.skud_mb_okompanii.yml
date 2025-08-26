@@ -1,0 +1,29 @@
+uuid: e37f9a24-4fcf-4973-ad71-cac25825b91a
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:58ad2b2a-305a-4fd2-a5cb-50817cd4e76d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'cell-sm-12 cell-lg-6'
+id: skud_mb_okompanii
+theme: skud_mb
+region: footer_content
+weight: -18
+provider: null
+plugin: 'block_content:58ad2b2a-305a-4fd2-a5cb-50817cd4e76d'
+settings:
+  id: 'block_content:58ad2b2a-305a-4fd2-a5cb-50817cd4e76d'
+  label: 'О компании'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

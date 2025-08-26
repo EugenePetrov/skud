@@ -1,0 +1,14 @@
+uuid: 294b2d37-d185-4b5c-9953-0c2c00d2effe
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: Переводы
+category: Language
+likert: false
+options: ''

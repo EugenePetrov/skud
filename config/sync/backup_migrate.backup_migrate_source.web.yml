@@ -1,0 +1,9 @@
+uuid: 8ba7ee82-a56c-40b4-899e-fa5b01fd8721
+langcode: ru
+status: true
+dependencies: {  }
+id: web
+label: web
+type: FileDirectory
+config:
+  directory: sites

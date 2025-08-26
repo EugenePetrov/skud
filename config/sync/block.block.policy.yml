@@ -1,0 +1,25 @@
+uuid: 775265e6-a9aa-4089-bb0f-2f65136755c5
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:242e75ac-ebc5-4759-87c8-3442b7d32e1e'
+  module:
+    - block_content
+  theme:
+    - skud_mb
+id: policy
+theme: skud_mb
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:242e75ac-ebc5-4759-87c8-3442b7d32e1e'
+settings:
+  id: 'block_content:242e75ac-ebc5-4759-87c8-3442b7d32e1e'
+  label: Policy
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: dcc4eb68-5a9c-4772-9635-bfacf6d1a2e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_long
+    - node.type.produkt
+  module:
+    - text
+id: node.produkt.field_intro_long
+field_name: field_intro_long
+entity_type: node
+bundle: produkt
+label: 'Intro long'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

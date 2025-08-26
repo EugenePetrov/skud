@@ -1,0 +1,21 @@
+uuid: 12316143-fc06-4cdb-81a1-68fa821272ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_smeta
+    - paragraphs.paragraphs_type.gotovye_resheniya
+  module:
+    - text
+id: paragraph.gotovye_resheniya.field_smeta
+field_name: field_smeta
+entity_type: paragraph
+bundle: gotovye_resheniya
+label: Смета
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

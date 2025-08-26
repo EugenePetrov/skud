@@ -1,0 +1,24 @@
+uuid: b496383a-c96f-42fb-b0e6-e1075a8a2a91
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_maksimalnaya_dlina_linii_s
+field_name: field_maksimalnaya_dlina_linii_s
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: '1200 м'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

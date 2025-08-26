@@ -1,0 +1,19 @@
+uuid: 811daccd-1de3-42ad-b023-ac8d5363bddb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_razmery_dkhshkhv_mm
+    - node.type.produkt
+id: node.produkt.field_razmery_dkhshkhv_mm
+field_name: field_razmery_dkhshkhv_mm
+entity_type: node
+bundle: produkt
+label: 'Размеры (ДхШхВ), мм'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

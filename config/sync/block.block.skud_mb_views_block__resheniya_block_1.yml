@@ -1,0 +1,32 @@
+uuid: 7a3b51ef-4d9f-4955-bffb-6aef65fc818a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.resheniya
+  module:
+    - ctools
+    - views
+  theme:
+    - skud_mb
+id: skud_mb_views_block__resheniya_block_1
+theme: skud_mb
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:resheniya-block_1'
+settings:
+  id: 'views_block:resheniya-block_1'
+  label: 'Другие готовые решения на базе СКУД Castle'
+  provider: views
+  label_display: visible
+  views_label: 'Другие готовые решения на базе СКУД Castle'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      resheniya: resheniya
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

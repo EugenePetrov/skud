@@ -1,0 +1,31 @@
+uuid: 2fe628c2-ab4a-4537-9872-6e60f53e62c2
+langcode: ru
+status: false
+dependencies:
+  config:
+    - webform.webform.kalkulyator_skud
+  module:
+    - system
+    - webform
+  theme:
+    - skud_mb
+id: vebforma
+theme: skud_mb
+region: after_main
+weight: -7
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Веб-форма калькулятора'
+  provider: webform
+  label_display: '0'
+  webform_id: kalkulyator_skud
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /calcs/kalkulyator-skud-na-dveri
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: d66a90d3-3cb5-461f-b0d4-a4d6d8d7294c
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: vE5kgVKYDCdDj8WqzYjVdqBpeqfMXlmueT_BLVdMIpc
+id: skud_mb_page_title
+theme: skud_mb
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

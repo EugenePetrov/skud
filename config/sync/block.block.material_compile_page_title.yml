@@ -1,0 +1,20 @@
+uuid: 576d606b-6a4a-47c1-93cc-ee318fd3db49
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - material_compile
+_core:
+  default_config_hash: vE5kgVKYDCdDj8WqzYjVdqBpeqfMXlmueT_BLVdMIpc
+id: material_compile_page_title
+theme: material_compile
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

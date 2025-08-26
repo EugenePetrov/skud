@@ -1,0 +1,19 @@
+uuid: 1a10debc-efad-4763-ad06-b027127c6f02
+langcode: ru
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_dokumentaciya_ssylka
+field_name: field_dokumentaciya_ssylka
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

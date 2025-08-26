@@ -1,0 +1,33 @@
+uuid: 413a650e-a7be-4433-b161-b0e4281f2757
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_vstroennyy_akkumulyator
+field_name: field_vstroennyy_akkumulyator
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '-'
+      label: '-'
+    -
+      value: 'до 30 минут автономной работы'
+      label: 'до 30 минут автономной работы'
+    -
+      value: '2'
+      label: 'до трех часов автономной работы'
+    -
+      value: '3'
+      label: 'до двух часов автономной работы'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

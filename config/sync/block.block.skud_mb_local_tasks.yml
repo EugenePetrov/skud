@@ -1,0 +1,22 @@
+uuid: 65529d01-6421-4498-b58e-47882503862b
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: UeD6LpMMsoIaftRd7dcm_34jfZDRkGh-VowTJ8Pj0Ls
+id: skud_mb_local_tasks
+theme: skud_mb
+region: content
+weight: -13
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

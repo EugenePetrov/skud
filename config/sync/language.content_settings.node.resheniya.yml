@@ -1,0 +1,11 @@
+uuid: 0f5d1218-fc8f-425a-a1ad-b67f2dc4ad46
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.resheniya
+id: node.resheniya
+target_entity_type_id: node
+target_bundle: resheniya
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,116 @@
+uuid: 70ba8a46-7448-4718-8cb5-7d2e811e7a0e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.produkt.body
+    - field.field.node.produkt.field_card_formats
+    - field.field.node.produkt.field_cvet_korpusa
+    - field.field.node.produkt.field_doc_description
+    - field.field.node.produkt.field_dokumentaciya
+    - field.field.node.produkt.field_dokumentaciya_ssylka
+    - field.field.node.produkt.field_energonezavisimaya_pamyat
+    - field.field.node.produkt.field_garantiya_proizvoditelya
+    - field.field.node.produkt.field_glubina_stoyki_19_shkafa
+    - field.field.node.produkt.field_image_page
+    - field.field.node.produkt.field_interfeys_schityvateley
+    - field.field.node.produkt.field_interfeys_svyazi_list
+    - field.field.node.produkt.field_intro
+    - field.field.node.produkt.field_intro_long
+    - field.field.node.produkt.field_klass_zaschity_korpusa
+    - field.field.node.produkt.field_knopka_kupit_ssylka
+    - field.field.node.produkt.field_kody_klavish
+    - field.field.node.produkt.field_maksimalnaya_dlina_linii_s
+    - field.field.node.produkt.field_maksimalnoe_potreblenie_ma
+    - field.field.node.produkt.field_massa_schityvatelya_g_ne_b
+    - field.field.node.produkt.field_metatag
+    - field.field.node.produkt.field_minimalnoe_rasstoyanie_mez
+    - field.field.node.produkt.field_potreblyaemyy_tok_bez_indi
+    - field.field.node.produkt.field_potreblyaemyy_tok_s_vklyuc
+    - field.field.node.produkt.field_product_type
+    - field.field.node.produkt.field_razmery_dkhshkhv_mm
+    - field.field.node.produkt.field_tekst_pod_kartinkoy_sprava
+    - field.field.node.produkt.field_temperaturnyy_rezhim
+    - field.field.node.produkt.field_top_banner
+    - field.field.node.produkt.field_udalennost_schit_wiegand
+    - field.field.node.produkt.field_udalennost_schityvatelya_o
+    - field.field.node.produkt.field_upravlenie_ustroystvami
+    - field.field.node.produkt.field_voltage_dc
+    - field.field.node.produkt.field_vstroennyy_akkumulyator
+    - image.style.medium
+    - node.type.produkt
+  module:
+    - image
+    - image_class
+    - text
+    - user
+id: node.produkt.teaser
+targetEntityType: node
+bundle: produkt
+mode: teaser
+content:
+  field_image_page:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings:
+      image_class:
+        class: ''
+  field_intro:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_intro_long:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_card_formats: true
+  field_cvet_korpusa: true
+  field_doc_description: true
+  field_dokumentaciya: true
+  field_dokumentaciya_ssylka: true
+  field_energonezavisimaya_pamyat: true
+  field_garantiya_proizvoditelya: true
+  field_glubina_stoyki_19_shkafa: true
+  field_interfeys_schityvateley: true
+  field_interfeys_svyazi_list: true
+  field_klass_zaschity_korpusa: true
+  field_knopka_kupit_ssylka: true
+  field_kody_klavish: true
+  field_maksimalnaya_dlina_linii_s: true
+  field_maksimalnoe_potreblenie_ma: true
+  field_massa_schityvatelya_g_ne_b: true
+  field_metatag: true
+  field_minimalnoe_rasstoyanie_mez: true
+  field_potreblyaemyy_tok_bez_indi: true
+  field_potreblyaemyy_tok_s_vklyuc: true
+  field_product_type: true
+  field_razmery_dkhshkhv_mm: true
+  field_tekst_pod_kartinkoy_sprava: true
+  field_temperaturnyy_rezhim: true
+  field_top_banner: true
+  field_udalennost_schit_wiegand: true
+  field_udalennost_schityvatelya_o: true
+  field_upravlenie_ustroystvami: true
+  field_voltage_dc: true
+  field_vstroennyy_akkumulyator: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

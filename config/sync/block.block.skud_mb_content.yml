@@ -1,0 +1,22 @@
+uuid: db7c7225-3bba-4eaf-8baa-1abbed6bb1f5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: 2Zm3sNLndIBMUNjQ06pQe_cDN1jIxMdFhL2EpzsCyis
+id: skud_mb_content
+theme: skud_mb
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

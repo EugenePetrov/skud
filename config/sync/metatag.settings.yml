@@ -1,0 +1,12 @@
+entity_type_groups:
+  node:
+    article:
+      basic: basic
+    novost:
+      basic: basic
+    page:
+      basic: basic
+    produkt:
+      basic: basic
+    webform:
+      basic: basic

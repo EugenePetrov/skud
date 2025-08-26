@@ -1,0 +1,68 @@
+uuid: 5a838b98-f838-4de9-b52f-f8ba01c3d485
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_draft
+    - field.field.node.page.field_image_page
+    - field.field.node.page.field_intro
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_top_banner
+    - image.style.610_x_390
+    - node.type.page
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  breadcrumb:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_page:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 610_x_390
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_intro:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_draft: true
+  field_metatag: true
+  field_top_banner: true
+  langcode: true
+  search_api_excerpt: true

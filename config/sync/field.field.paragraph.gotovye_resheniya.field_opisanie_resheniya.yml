@@ -1,0 +1,21 @@
+uuid: 1fa00503-28ac-439d-a455-b21cec03cb95
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_opisanie_resheniya
+    - paragraphs.paragraphs_type.gotovye_resheniya
+  module:
+    - text
+id: paragraph.gotovye_resheniya.field_opisanie_resheniya
+field_name: field_opisanie_resheniya
+entity_type: paragraph
+bundle: gotovye_resheniya
+label: 'Описание решения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

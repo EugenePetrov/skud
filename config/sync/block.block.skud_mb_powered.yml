@@ -1,0 +1,26 @@
+uuid: 78a8a3db-9982-4f17-bbaf-463928358596
+langcode: ru
+status: false
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: footer-item
+_core:
+  default_config_hash: oPLQADwRU6m7GnRynjxQ_hPojwPJWyOxK4YMVbBOGiQ
+id: skud_mb_powered
+theme: skud_mb
+region: footer
+weight: -16
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: c7add681-a8dd-49a8-a63d-9d5e613b1fab
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.token
+label: Токен
+targetEntityType: block_content
+cache: true

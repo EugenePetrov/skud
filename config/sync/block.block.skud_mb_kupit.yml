@@ -1,0 +1,33 @@
+uuid: 27146fd0-100f-4978-a63d-e4652d7e7987
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cbd4d92e-fe9a-4991-8038-a81f6334fc35'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - skud_mb
+id: skud_mb_kupit
+theme: skud_mb
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:cbd4d92e-fe9a-4991-8038-a81f6334fc35'
+settings:
+  id: 'block_content:cbd4d92e-fe9a-4991-8038-a81f6334fc35'
+  label: 'Купить СКУД'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      resheniya: resheniya
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

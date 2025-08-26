@@ -1,0 +1,32 @@
+uuid: eb159a35-2f8c-4a5e-9742-7494b43e4255
+langcode: ru
+status: true
+dependencies:
+  module:
+    - token_filter
+name: Editor
+format: editor
+weight: -9
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul> <ul type> <ul class> <ol> <ol start type> <ol class> <li > <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <p> <h1> <pre> <table class> <caption> <tbody> <thead> <tfoot> <th> <td colspan class> <td rowspan> <tr> <colgroup width>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: false
+    weight: 0
+    settings:
+      replace_empty: '0'

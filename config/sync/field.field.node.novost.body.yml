@@ -1,0 +1,23 @@
+uuid: 9349deb4-b160-4843-a02d-25460343ef8f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.novost
+  module:
+    - text
+id: node.novost.body
+field_name: body
+entity_type: node
+bundle: novost
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

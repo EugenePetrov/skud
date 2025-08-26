@@ -1,0 +1,31 @@
+uuid: 951cef8e-1ae7-48ae-b1a2-3f00d55a3bff
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b5488701-c3f5-4a5d-8972-ff556502f239'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_nagrady
+theme: skud_mb
+region: after_main
+weight: -8
+provider: null
+plugin: 'block_content:b5488701-c3f5-4a5d-8972-ff556502f239'
+settings:
+  id: 'block_content:b5488701-c3f5-4a5d-8972-ff556502f239'
+  label: Награды
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/o-nas\r\n<front>"
+    negate: false
+    context_mapping: {  }

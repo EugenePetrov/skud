@@ -1,0 +1,27 @@
+uuid: 69cee3f3-d121-4f65-bfa7-101051246818
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - material_compile
+_core:
+  default_config_hash: fSiwMKfDL5oteR_z5xqcnu6bnrrlUv_PoN17yjwoTPE
+id: material_compile_tools
+theme: material_compile
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

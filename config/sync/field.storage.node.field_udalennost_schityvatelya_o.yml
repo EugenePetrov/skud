@@ -1,0 +1,21 @@
+uuid: 72987171-fe2d-485a-8f9d-18a6474a9fbb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_udalennost_schityvatelya_o
+field_name: field_udalennost_schityvatelya_o
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

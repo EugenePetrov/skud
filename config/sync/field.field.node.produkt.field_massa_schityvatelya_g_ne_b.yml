@@ -1,0 +1,19 @@
+uuid: a976d30f-c636-4d00-9541-2661442a5604
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_massa_schityvatelya_g_ne_b
+    - node.type.produkt
+id: node.produkt.field_massa_schityvatelya_g_ne_b
+field_name: field_massa_schityvatelya_g_ne_b
+entity_type: node
+bundle: produkt
+label: 'Масса считывателя, г, не более'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

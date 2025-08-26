@@ -1,0 +1,31 @@
+uuid: 691bb8ea-bcd7-43a7-9971-504dac2f8d81
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3b49a660-a606-4241-920b-23e7226cf7db'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_slayder
+theme: skud_mb
+region: before_main
+weight: -14
+provider: null
+plugin: 'block_content:3b49a660-a606-4241-920b-23e7226cf7db'
+settings:
+  id: 'block_content:3b49a660-a606-4241-920b-23e7226cf7db'
+  label: Слайдер
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: 4c35c05b-a113-47c7-a78f-d466da7ae9d1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nazvanie_resheniya
+    - paragraphs.paragraphs_type.gotovye_resheniya
+id: paragraph.gotovye_resheniya.field_nazvanie_resheniya
+field_name: field_nazvanie_resheniya
+entity_type: paragraph
+bundle: gotovye_resheniya
+label: 'Название решения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

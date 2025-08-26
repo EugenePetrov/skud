@@ -1,0 +1,29 @@
+uuid: 4441932b-71af-42d6-b126-155deecd66ad
+langcode: ru
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8c05408c-1fad-4f93-a272-9c08a6ef7ed0'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-calc-toggle'
+id: calc
+theme: skud_mb
+region: navbar
+weight: 0
+provider: null
+plugin: 'block_content:8c05408c-1fad-4f93-a272-9c08a6ef7ed0'
+settings:
+  id: 'block_content:8c05408c-1fad-4f93-a272-9c08a6ef7ed0'
+  label: calc
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

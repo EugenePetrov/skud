@@ -1,0 +1,70 @@
+uuid: 2967b708-f436-4f53-8ed6-fd88dc9f1280
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_dolzhnost
+    - field.field.node.testimonial.field_image
+    - field.field.node.testimonial.field_imya
+    - field.field.node.testimonial.field_kompaniya
+    - field.field.node.testimonial.field_top_banner
+    - image.style.otzyv
+    - node.type.testimonial
+  module:
+    - image
+    - text
+    - user
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dolzhnost:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: otzyv
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_imya:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_kompaniya:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_top_banner: true
+  langcode: true

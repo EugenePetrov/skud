@@ -1,0 +1,20 @@
+uuid: 68d0fedf-2b71-4f06-8e34-49382209bf39
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_stoimost
+field_name: field_stoimost
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

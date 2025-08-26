@@ -1,0 +1,84 @@
+uuid: 74f89ddd-273b-4d0e-8edc-725072c35d5f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.resheniya.body
+    - field.field.node.resheniya.field_dokumentaciya
+    - field.field.node.resheniya.field_gotovoe_reshenie
+    - field.field.node.resheniya.field_image
+    - field.field.node.resheniya.field_image_page
+    - field.field.node.resheniya.field_intro_solutions
+    - field.field.node.resheniya.field_metatag
+    - field.field.node.resheniya.field_top_banner
+    - node.type.resheniya
+  module:
+    - entity_reference_revisions
+    - file
+    - image
+    - text
+    - user
+id: node.resheniya.default
+targetEntityType: node
+bundle: resheniya
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dokumentaciya:
+    weight: 4
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_gotovoe_reshenie:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_page:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_intro_solutions:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_metatag: true
+  field_top_banner: true
+  langcode: true
+  search_api_excerpt: true

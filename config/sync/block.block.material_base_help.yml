@@ -1,0 +1,22 @@
+uuid: 1f43a65c-f6fc-4197-867c-0fcbcecd17d2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - material_base
+_core:
+  default_config_hash: OM3FbrjSRkdgYrwylM5zqO1BSzrSF5pK_3gpzn2fruU
+id: material_base_help
+theme: material_base
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

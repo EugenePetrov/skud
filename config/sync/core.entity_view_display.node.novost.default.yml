@@ -1,0 +1,102 @@
+uuid: cbd20772-47c7-4d08-8cba-dda64c43f015
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.novost.body
+    - field.field.node.novost.feeds_item
+    - field.field.node.novost.field_data_novosti
+    - field.field.node.novost.field_image
+    - field.field.node.novost.field_metatag
+    - field.field.node.novost.field_ssylka_na_istochnik
+    - field.field.node.novost.field_ssylka_na_video
+    - field.field.node.novost.field_tags
+    - field.field.node.novost.field_top_banner
+    - node.type.novost
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.novost.default
+targetEntityType: node
+bundle: novost
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_data_novosti:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: fallback
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings:
+      image_class:
+        class: ''
+    type: image
+    region: content
+  field_ssylka_na_istochnik:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ssylka_na_video:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tags:
+    weight: 6
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_top_banner:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  feeds_item: true
+  field_metatag: true
+  langcode: true
+  search_api_excerpt: true

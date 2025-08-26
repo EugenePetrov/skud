@@ -1,0 +1,21 @@
+uuid: 5726c7f6-0305-4418-92d8-991bdf36a36e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_draft
+    - node.type.page
+  module:
+    - text
+id: node.page.field_draft
+field_name: field_draft
+entity_type: node
+bundle: page
+label: Draft
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

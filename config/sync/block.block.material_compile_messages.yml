@@ -1,0 +1,22 @@
+uuid: 9548d21c-06ae-4105-bfb0-208fd1339af5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - material_compile
+_core:
+  default_config_hash: E88kZALM9sVeaPH47lyq1zGVNBcalry6Oz1KBAB1l0c
+id: material_compile_messages
+theme: material_compile
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

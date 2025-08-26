@@ -1,0 +1,28 @@
+uuid: bf1fef57-b1f9-4a82-82e1-99bc21e87ba3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_knopka_kupit_ssylka
+    - node.type.produkt
+  module:
+    - link
+id: node.produkt.field_knopka_kupit_ssylka
+field_name: field_knopka_kupit_ssylka
+entity_type: node
+bundle: produkt
+label: 'Кнопка Купить Ссылка'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'entity:node/25'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,23 @@
+uuid: ae437145-09ac-443a-b35f-c72709df1aa6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testimonial
+  module:
+    - text
+id: node.testimonial.body
+field_name: body
+entity_type: node
+bundle: testimonial
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

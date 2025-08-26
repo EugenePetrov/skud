@@ -1,0 +1,23 @@
+uuid: 2dd95d05-85fb-436d-93d5-cd468cda99ea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dokumentaciya_ssylka
+    - node.type.produkt
+  module:
+    - link
+id: node.produkt.field_dokumentaciya_ssylka
+field_name: field_dokumentaciya_ssylka
+entity_type: node
+bundle: produkt
+label: 'Документация ссылка'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,21 @@
+uuid: 40937877-4d8f-4ab2-a6dc-10d7a86ce8b2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_solutions
+    - node.type.resheniya
+  module:
+    - text
+id: node.resheniya.field_intro_solutions
+field_name: field_intro_solutions
+entity_type: node
+bundle: resheniya
+label: Интро
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

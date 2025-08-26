@@ -1,0 +1,21 @@
+uuid: b3bb62f1-9499-4559-ba1a-aaecf0fe2060
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voltage_dc
+    - node.type.produkt
+id: node.produkt.field_voltage_dc
+field_name: field_voltage_dc
+entity_type: node
+bundle: produkt
+label: 'Напряжение питания постоянного тока, В'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 8-15
+default_value_callback: ''
+settings: {  }
+field_type: string

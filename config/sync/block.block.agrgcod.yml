@@ -1,0 +1,31 @@
+uuid: 54c18b02-ebfe-43c9-bb3f-9144d7dba7eb
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5eaf7d67-e5b2-4f6d-9e69-893a81cd3892'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: agrgcod
+theme: skud_mb
+region: after_main
+weight: -16
+provider: null
+plugin: 'block_content:5eaf7d67-e5b2-4f6d-9e69-893a81cd3892'
+settings:
+  id: 'block_content:5eaf7d67-e5b2-4f6d-9e69-893a81cd3892'
+  label: 'AGRG ЦОД'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 285990f6-5228-4612-9b87-f1c823346654
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4e99750-5552-4422-bb78-06938b712aab'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: vzyatnatestirovanie
+theme: skud_mb
+region: after_main
+weight: -14
+provider: null
+plugin: 'block_content:b4e99750-5552-4422-bb78-06938b712aab'
+settings:
+  id: 'block_content:b4e99750-5552-4422-bb78-06938b712aab'
+  label: 'Взять на тестирование'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

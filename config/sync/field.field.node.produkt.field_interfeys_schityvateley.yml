@@ -1,0 +1,23 @@
+uuid: 8e430edc-f6d3-4904-ac66-61f0f4eec343
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interfeys_schityvateley
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_interfeys_schityvateley
+field_name: field_interfeys_schityvateley
+entity_type: node
+bundle: produkt
+label: 'Интерфейс связи с контроллером'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Wiegand-26, Dallas Touch Memory'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
