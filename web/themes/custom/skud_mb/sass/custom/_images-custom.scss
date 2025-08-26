@@ -1,0 +1,21 @@
+//Images Custom
+.images-wrap {
+  position: relative;
+  .images-custom {
+    @media (min-width: 1800px) {
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+
+        &.image-first {
+          right: 328px;
+        }
+        &.image-last {
+          right: -175px;
+        }
+      }
+    }
+  }
+}

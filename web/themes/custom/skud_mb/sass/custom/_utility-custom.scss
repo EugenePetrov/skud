@@ -1,0 +1,196 @@
+.spacing-15 {
+  @include responsive-offset(15px);
+}
+
+.spacing-30 {
+  @include responsive-offset(30px);
+}
+
+.spacing-40 {
+  @include responsive-offset(40px);
+}
+
+.spacing-55 {
+  @include responsive-offset(55px);
+}
+
+.spacing-60 {
+  @include responsive-offset(30px);
+
+  @media (min-width: $screen-md) {
+    @include responsive-offset(60px);
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .spacing-70 {
+    @include responsive-offset-media(70px);
+  }
+
+  .spacing-90 {
+    @include responsive-offset-media(90px);
+  }
+}
+
+//Utility Custom
+.grid-system {
+  @media(max-width: $screen-md-min - 1) {
+    p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.team-member {
+
+  &-quote {
+    padding: 40px 15px;
+    background-color: #f6f6f6;
+    @media (min-width: $screen-xs-min) {
+      padding: 50px 40px 50px 50px;
+    }
+  }
+}
+
+.well-custom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 15px 40px;
+  background-color: #f6f6f6;
+  h5 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-classic {
+    @media (min-width: $screen-sm-min) {
+      padding: 50px 50px 40px;
+    }
+    h5 {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &-default {
+    @media (min-width: $screen-sm-min) {
+      margin-top: 100px;
+      margin-bottom: -1px;
+      padding: 70px 75px 80px;
+    }
+  }
+}
+
+.well-custom-1 {
+  @media (max-width: $screen-md-min - 1) {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  padding: 46px 45px 40px;
+  background-color: #f6f6f6;
+}
+
+.custom-way-point {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  bottom: 28px;
+  left: 50%;
+  @include transform(translateX(-50%));
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .120em;
+  color: $text-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include transition(.3s ease-out all);
+  @media (min-width: $screen-xs-min) {
+    bottom: 40px;
+  }
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+  @media (min-width: $screen-md-min) {
+    bottom: 80px;
+  }
+  @media (min-width: 1800px) {
+    bottom: 80px;
+  }
+  @media (min-width: 1800px) and (min-height: 820px){
+    bottom: 180px;
+  }
+  &:after {
+    content: '\e313';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-family: 'Material Icons', sans-serif;
+    font-size: 20px;
+    color: $text-color;
+    @include transform(translateX(-50%));
+    @include transition(.3s ease-out all);
+    @media (min-width: $screen-xs-min) {
+      top: 100%
+    }
+  }
+  &:hover {
+    color: $brand-patina;
+    &:after {
+      color: $brand-patina;
+    }
+  }
+  &-swiper {
+    @media (min-width: $screen-xl-min) {
+      bottom: 80px;
+    }
+  }
+}
+
+.mobile {
+  .custom-way-point {
+    display: none;
+  }
+}
+
+.circle-custom {
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(center);
+  border-radius: 50%;
+}
+
+.height-fill {
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(stretch);
+  > * {
+    @include flex-grow(1);
+    height: 100%;
+  }
+}
+
+.ios {
+  .range.spacing-15 {
+    @media (min-width: $screen-sm-min) {
+      .cell-sm-6 {
+        @include flex-basis(49%);
+      }
+    }
+  }
+}
+
+.wrap-fluid {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-wrap {
+  @media (min-width: $screen-md-min) {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+
+{# {% if material_type != 'resheniya' %} #}
+<section class="breadcrumb-classic">
+  <div class="rd-parallax-1">
+    <div data-speed="0.25" data-type="media" data-url={{ breadcrumb_img }} class="rd-parallax-layer-1" style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ breadcrumb_img }}); background-size: cover; height: 302px"></div>
+    <div class="layout-content">
+      <div data-speed="0" data-type="html" class="rd-parallax-layer-1" style="position:absolute; bottom:1px">
+        <div class="shell">
+          {% if breadcrumb %}
+            <nav role="navigation" aria-labelledby="system-breadcrumb">
+              <div id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</div>
+
+              <ul class="list-breadcrumb">
+                {% for item in breadcrumb %}
+                  <li>
+                    {% if item.url %}
+                      <a href="{{ item.url }}">{{ item.text }}</a>
+                    {% else %}
+                      {{ item.text }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{# {% endif %} #}
+
+
+{#
+{% if breadcrumb %}
+  <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ol>
+    {% for item in breadcrumb %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+  </nav>
+{% endif %}
+#}

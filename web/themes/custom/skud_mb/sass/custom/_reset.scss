@@ -1,0 +1,56 @@
+//
+// Reset Styles
+// --------------------------------------------------
+
+// Remove leading spacing of element
+
+*:first-child {
+  margin-top: 0;
+}
+
+
+
+*:last-child {
+  margin-bottom: 0;
+}
+
+* {
+  &,
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    outline: none !important;
+  }
+}
+
+.blog-post-navigation {
+  br {
+    line-height: 0;
+  }
+}
+
+button {
+  border: none;
+}
+
+cite {
+  font-style: normal;
+}
+
+.rd-select {
+  .rd-select-menu {
+    z-index: 9999;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.rd-select-open {
+    .rd-select-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  label { margin-bottom: 0; }
+}

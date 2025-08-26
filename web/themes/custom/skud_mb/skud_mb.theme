@@ -1,0 +1,115 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function skud_mb_preprocess_html(&$variables) {
+  // Add sticky navbar class
+  $variables['attributes']['class'][] = 'navbar-fixed';
+}
+
+/**
+ Display breadcrumb background. Get node and first check if page has a banner field (i.e is a node not View). If not a node (no banner field), load default banner #1. Else check if banner field is empty. If empty, check page's content type — if product, load banner #2, else load banner #1. If neither, get banner field id, load image, retrieve its URL and create relative URL.
+ */
+function skud_mb_preprocess_breadcrumb(&$variables) {
+	$node = Drupal::request()->attributes->get('node');
+
+	if (is_null($node->field_top_banner)) {
+		$variables['breadcrumb_img'] = '/themes/custom/skud_mb/images/common-banner.jpg';
+	}
+
+	elseif ($node->field_top_banner->isEmpty()) {
+		if ($node->getType() == 'produkt') {
+    	$variables['breadcrumb_img'] = '/themes/custom/skud_mb/images/controllery-combo-back.jpg';
+		}
+		if ($node->getType() == 'novost') {
+    	$variables['breadcrumb_img'] = '/themes/custom/skud_mb/images/news-breadcmb.jpg';
+		}
+		else {	
+			$variables['breadcrumb_img'] = '/themes/custom/skud_mb/images/o-nas-11.jpg';
+		}
+	}
+
+	else {
+		$image_id = $node->field_top_banner->target_id;
+		$image_file = file_load($image_id);
+		$image_public_uri = $image_file->getFileUri();
+		$variables['breadcrumb_img'] = file_url_transform_relative(file_create_url($image_public_uri));
+		$variables['material_type'] = $node->getType();
+	}
+}
+
+/**
+ Display right side image in Page (Страница) content type 
+ */
+function skud_mb_preprocess_field(&$variables) {
+	$node = Drupal::request()->attributes->get('node');
+	$image_page_id = $node->field_image_page->target_id;
+	if (is_null($image_page_id)) {
+		$variables['image_page'] = '/themes/custom/skud_mb/images/img-page-no-image.jpg';
+	}
+	else {
+		$image_page_file = file_load($image_page_id);
+		$image_page_public_uri = $image_page_file->getFileUri();
+		$variables['image_page'] = file_url_transform_relative(file_create_url($image_page_public_uri));
+		$variables['image_page_alt'] = $node->field_image_page->alt;	
+	}
+
+	/**
+	Counter for inctremental accordion items' IDs
+	*/
+	static $counter = 0;
+  $variables['counter'] = $counter++;
+}
+
+/**
+ Make required markup depending on node's content type 
+ */
+function skud_mb_preprocess_block(&$variables) {
+	$node = Drupal::request()->attributes->get('node');
+
+		if (is_null($node)) {
+			$variables['markup'] = 'cell-md-12';
+		}
+
+		elseif ($node->getType() == 'page') {
+			$variables['markup'] = 'cell-md-12';
+		}
+		
+		else {
+			$variables['material_type'] = $node->getType();
+		}
+		
+		$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}
+
+/**
+Attach custom libraries
+*/
+function skud_mb_preprocess_page(&$variables) {
+	$node = Drupal::request()->attributes->get('node');
+
+	if (!is_null($node)) {
+		if ($node->id() == 254) {
+			$variables['#attached']['library'][] = 'skud_mb/product-calc';
+		}
+		elseif ($node->getType() == 'calc') {
+	    $variables['#attached']['library'][] = 'skud_mb/calc';
+	  }
+	}
+
+	// Add the current timestamp as a render array with specific cache settings.
+  $variables['now'] = [
+    '#markup' => \Drupal::service('date.formatter')->format(time(), 'custom', 'Y'),
+    '#cache' => [
+      'max-age' => 0,
+    ],
+  ];
+}

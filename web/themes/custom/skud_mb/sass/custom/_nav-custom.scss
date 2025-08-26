@@ -1,0 +1,62 @@
+.nav-custom {
+  > li {
+    display: block;
+    a {
+      display: block;
+      padding: 10px 25px;
+      color: $brand-primary;
+      background-color: transparent;
+      border: 1px solid $brand-primary;
+      &:hover {
+        color: $white;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+    &.active {
+      a {
+        color: $white;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+    &:nth-child(1n + 2) {
+      a {
+        border-top-color: transparent;
+      }
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: -10px;
+    margin-left: -5px;
+    text-align: left;
+    @include transform(translateY(-10px));
+    > li {
+      margin-top: 10px;
+      margin-left: 5px;
+      display: inline-block;
+      a {
+        display: inline-block;
+        color: $white;
+        background-color: $brand-primary;
+        border: 1px solid $brand-primary;
+        &:hover {
+          color: $brand-primary;
+          background-color: transparent;
+          border-color: $brand-primary;
+        }
+      }
+      &.active {
+        a {
+          color: $brand-primary;
+          background-color: transparent;
+          border-color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 20px 0;
+}

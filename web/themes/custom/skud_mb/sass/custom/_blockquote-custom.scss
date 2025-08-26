@@ -1,0 +1,28 @@
+//Blockquote Custom
+.quote-default {
+  max-width: 985px;
+  padding: 45px 15px;
+  background-color: #f6f6f6;
+
+  q {
+    font-weight: 400;
+    line-height: 1.77;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding: 45px 60px 57px 52px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding: 45px 90px 57px 52px;
+  }
+  &-variant-1 {
+    @media (min-width: $screen-sm-min) {
+      padding: 45px 45px 57px 52px;
+    }
+    @media (min-width: $screen-lg-min) {
+      @media (min-width: $screen-lg-min) {
+        padding: 45px 90px 57px 52px;
+      }
+    }
+  }
+}

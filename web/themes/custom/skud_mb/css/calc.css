@@ -1,0 +1,339 @@
+.webform-submission-kalkulyator-skud-form {
+    padding-bottom: 80px;
+    margin-top: 0!important;
+}
+
+.js-webform-computed-wrapper {
+    background: #283443;
+    color: #ffffff;
+    padding: 10px 0 0 0;
+    transition: all 0.2s ease-out;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    height: auto;
+    min-width: 200px;
+    width: max-content;
+    text-align: center;
+    border: 0;
+}
+
+.webform-computed-loading {
+    color: #000;
+    width: fit-content;
+    padding: 7px 0 0 0;
+    height: auto;
+    transition: all 0.2s ease-out;      
+    height: auto;
+    position:relative;
+}
+
+.webform-computed-loading:after {
+    content: 'Идет расчет';
+    transition: all 0.2s ease-out;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.webform-computed-loading .js-form-item-itogo,
+.webform-computed-loading .js-form-item-itogo label {
+    color: #00000000;
+    transition: all 0.2s ease-out;
+}
+
+.js-form-item-itogo {
+    background: #3f51b500;
+    color:#fff;
+    padding: 0 10px;
+    transition: all 0.2s ease-out;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 -3px 0;
+}
+
+.js-form-item-itogo label {
+    font-size: 24px;
+    color: #fff;
+}
+
+.js-webform-computed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #45cd8f;
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 1px 12px 2px #808080c7;
+}
+
+.webform-element-help {
+    height: 14px;
+    width: 14px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.webform-element-help--content {
+    font-size: 11px;
+    padding: 5px 15px 10px;
+}
+
+.webform-element-help--content ul {
+    padding-left: 15px;
+    list-style: disc;
+}
+
+.webform-flexbox {
+    margin: 10px 0 10px!important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    width: max-content;
+}
+
+.webform-flexbox:first-child {
+    margin-top: auto;
+}
+
+.select2-container--bootstrap .select2-selection--single {
+    padding: 10px!important;
+    line-height: 40px;
+}
+
+.form-item-itogo {
+    margin-top: inherit;
+}
+
+.form-item .form-item {
+    clear: both;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item input[type="password"],
+.form-item input[type="search"],
+.form-item input[type="tel"],
+.form-item textarea,
+.form-item select {
+    margin: 0;
+}
+
+.form-item label.option, 
+.form-item.focused label.option {
+    display: block;
+    line-height: 22px;
+}
+
+legend {
+    margin-bottom: 10px;
+    line-height: 30px;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 5px 5px 0 0;
+    background: #406da5;
+    color: #f7f5f5;
+    width: auto;
+}
+
+span.fieldset-legend {
+    padding: 10px 15px;
+    display: block;
+}
+
+span.visually-hidden.fieldset-legend {
+    padding: 0;
+}
+
+.form-item.form-type-select:after {
+    float: none;
+    margin-top: 18px;
+}
+
+.webform-flex--container label,
+.long-label label {
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    line-height: 16px;
+    display: block;
+}
+
+input[type="number"] {
+    border: 1px solid #ccc!important;
+    padding: 12px 8px;
+    font-size: 18px;
+    max-width: 100px;
+}
+
+select.form-select {
+    padding: 12px 8px;
+    line-height: 29px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+}
+
+fieldset .fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+fieldset .fieldset-wrapper > * {
+    flex: 0 0 auto;
+    max-width: 49%;
+    width: 50%;
+}
+    @media (max-width: 991px) {
+        fieldset .fieldset-wrapper > * {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+fieldset.flex-width-auto .fieldset-wrapper > * {
+    max-width: 100%;
+    width: auto;
+    flex-wrap: wrap;
+    flex: 0.6 0 51%;
+}
+    @media (max-width: 1200px) {
+        fieldset.flex-width-auto .fieldset-wrapper > * {
+            flex: 1 0 51%;
+        }
+    }
+
+#edit-flexbox-distance,
+#edit-flexbox-lock-type,
+.flex-column {
+    flex-direction: column;
+}
+
+.webform-flexbox .webform-flexbox {
+    padding: 0;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .preview {
+        margin-left: 0!important;
+    }
+}
+
+.preview img {
+    transition: all 0.2s ease-out;
+    min-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150px;
+    object-fit: contain;
+    z-index: 2;
+    position: relative;
+}
+
+.preview p {
+    text-align: center;
+}
+
+[id*='edit-flexbox-door'] {
+    display: flex;
+    align-items:flex-end;
+}
+
+[id*='edit-flexbox-door'] .webform-flex {
+    width: 50%;
+    max-width: 50%;
+    flex: 50%;
+}
+
+.transition {
+    transform: scale(2);
+    transition: all 0.2s ease-out;
+    z-index: 3!important;
+}
+
+[id*='edit-ceny'] {
+    height: 0;
+    margin-top: 0;
+}
+
+[id*='edit-ceny'] legend,
+[id*='edit-raznye-zamki'] legend {
+    border: 0;
+    background: transparent;
+}
+
+[id*='edit-raznye-zamki'] .webform-flexbox.js-webform-states-hidden[style*="display: block"] {
+    display: block!important;
+}
+
+.stepper {
+    max-width: 100px;
+    width: 100px;
+}
+
+.form-item input[type="radio"], 
+.form-item input[type="checkbox"] {
+    margin-top: 4px;
+}
+
+input[type='checkbox'] ~ .description {
+    margin-left: 35px;
+    margin-top: 0;
+}
+
+input[type='checkbox'] ~ .description,
+input[type='email'] ~ .description,
+input[type='tel'] ~ .description {
+    line-height: 16px;
+}
+    @media (min-width: 991px) {
+        input[type='checkbox'] ~ .description, 
+        input[type='email'] ~ .description,
+        input[type='tel'] ~ .description {
+            width: 50%;
+        }
+    }
+
+img.more {
+    width: auto;
+    max-width: 500px;
+}
+    @media (max-width: 480px) {
+        img.more {
+            max-width: 300px;
+        }
+    }
+
+.funny-btn-wrapper {
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    width: auto;
+    text-align: center;
+    z-index: 100;
+}
+     @media (max-width: 480px) {
+        .funny-btn-wrapper {
+            right: 0;
+            bottom: 73px;
+        }
+    }
+    
+.funny-btn {
+    line-height: 1.2;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    text-align: left;
+}
+
+input[type="submit"] {
+    height: 70px;
+    width: 220px;
+}
