@@ -1,0 +1,19 @@
+uuid: e8553e9f-4787-456c-bf9b-d60e42189e93
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_udalennost_schityvatelya_o
+    - node.type.produkt
+id: node.produkt.field_udalennost_schityvatelya_o
+field_name: field_udalennost_schityvatelya_o
+entity_type: node
+bundle: produkt
+label: 'Удаленность считывателя от контроллера в режиме DS1990A, не более, м'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

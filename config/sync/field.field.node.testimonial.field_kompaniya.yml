@@ -1,0 +1,19 @@
+uuid: d9b2b3e5-5166-4fb7-bf4a-fa57a4c393fa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kompaniya
+    - node.type.testimonial
+id: node.testimonial.field_kompaniya
+field_name: field_kompaniya
+entity_type: node
+bundle: testimonial
+label: Компания
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

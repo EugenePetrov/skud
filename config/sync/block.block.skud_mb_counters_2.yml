@@ -1,0 +1,25 @@
+uuid: 0fc61401-0f76-4571-b030-55e626649ccb
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29f3158c-1d82-4856-81c7-36bc1acb955b'
+  module:
+    - block_content
+  theme:
+    - skud_mb
+id: skud_mb_counters_2
+theme: skud_mb
+region: footer
+weight: -17
+provider: null
+plugin: 'block_content:29f3158c-1d82-4856-81c7-36bc1acb955b'
+settings:
+  id: 'block_content:29f3158c-1d82-4856-81c7-36bc1acb955b'
+  label: Counters
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

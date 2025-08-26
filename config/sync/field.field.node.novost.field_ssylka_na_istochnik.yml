@@ -1,0 +1,23 @@
+uuid: 0a8c2e7d-2ef9-461a-8c5f-a74333ace180
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ssylka_na_istochnik
+    - node.type.novost
+  module:
+    - link
+id: node.novost.field_ssylka_na_istochnik
+field_name: field_ssylka_na_istochnik
+entity_type: node
+bundle: novost
+label: 'Ссылка на источник'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

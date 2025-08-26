@@ -1,0 +1,10 @@
+uuid: dea93006-1d6c-4819-94a3-1ef9ea77ed12
+langcode: ru
+status: true
+dependencies: {  }
+id: node__novost
+label: 'Content: Новость'
+tags:
+  title: '[node:title] | [site:name]'
+  keywords: '[node:title]'
+  description: '[node:body]'

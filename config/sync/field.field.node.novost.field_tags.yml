@@ -1,0 +1,29 @@
+uuid: c7ac10b6-cf40-4da6-9a81-11850b1fe56e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.novost
+    - taxonomy.vocabulary.tags
+id: node.novost.field_tags
+field_name: field_tags
+entity_type: node
+bundle: novost
+label: Теги
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

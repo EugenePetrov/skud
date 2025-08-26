@@ -1,0 +1,11 @@
+uuid: 12475d29-bf9a-41b9-bbff-cbc14fd7d75d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.calc
+id: node.calc
+target_entity_type_id: node
+target_bundle: calc
+default_langcode: site_default
+language_alterable: false

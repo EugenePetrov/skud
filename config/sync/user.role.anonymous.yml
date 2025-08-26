@@ -1,0 +1,16 @@
+uuid: 54ff1a2e-94b8-4664-ab9e-66c4eb89a390
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Анонимный пользователь'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access pwa'
+  - 'search content'
+  - 'use text format restricted_html'

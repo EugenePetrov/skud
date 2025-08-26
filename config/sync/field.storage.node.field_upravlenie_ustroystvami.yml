@@ -1,0 +1,45 @@
+uuid: 55d99a4a-bee6-4c72-a4f5-04ae56849021
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_upravlenie_ustroystvami
+field_name: field_upravlenie_ustroystvami
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Четыре двери (односторонние)'
+    -
+      value: '2'
+      label: 'Две двери (односторонние) или одна дверь (двухсторонняя) или один турникет'
+    -
+      value: '3'
+      label: 'Две двери (двухсторонние), два турникета'
+    -
+      value: '5'
+      label: 'Две двери (двухсторонние), один турникет'
+    -
+      value: '4'
+      label: 'Турникет, две двери, шлагбаум'
+    -
+      value: '6'
+      label: 'Охранная сигнализация «Болид»'
+    -
+      value: '7'
+      label: 'Один двухдверный шкаф или два однодверных'
+    -
+      value: '8'
+      label: 'Два двухдверных шкафа или четыре однодверных'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

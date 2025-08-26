@@ -1,0 +1,21 @@
+uuid: 9661652d-4340-4d2d-bb70-018aa1c98a70
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_klass_zaschity_korpusa
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_klass_zaschity_korpusa
+field_name: field_klass_zaschity_korpusa
+entity_type: node
+bundle: produkt
+label: 'Класс защиты корпуса'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

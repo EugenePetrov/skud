@@ -1,0 +1,27 @@
+uuid: 0ab9cd6e-a5b2-4525-b418-3491bada7356
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: fSiwMKfDL5oteR_z5xqcnu6bnrrlUv_PoN17yjwoTPE
+id: skud_mb_tools
+theme: skud_mb
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

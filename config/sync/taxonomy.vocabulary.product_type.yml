@@ -1,0 +1,8 @@
+uuid: 9715c81a-2f85-4925-9562-7ac56befab14
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Product type'
+vid: product_type
+description: ''
+weight: 0

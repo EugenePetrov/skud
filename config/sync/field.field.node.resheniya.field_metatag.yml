@@ -1,0 +1,21 @@
+uuid: caadf9a2-c22d-44a8-80c2-986ec7ccf6be
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.resheniya
+  module:
+    - metatag
+id: node.resheniya.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: resheniya
+label: Metatag
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

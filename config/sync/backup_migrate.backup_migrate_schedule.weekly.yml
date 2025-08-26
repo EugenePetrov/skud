@@ -1,0 +1,13 @@
+uuid: 9787b3c1-5277-4b2d-aea6-a56ba624454d
+langcode: ru
+status: true
+dependencies: {  }
+id: weekly
+label: Weekly
+enabled: true
+keep: 2
+period: 604800
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: full_backup

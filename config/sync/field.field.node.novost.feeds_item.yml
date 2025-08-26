@@ -1,0 +1,23 @@
+uuid: b3c1ed6d-e2f9-4ad7-b12f-0eee68878d12
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.novost
+  module:
+    - feeds
+id: node.novost.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: novost
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

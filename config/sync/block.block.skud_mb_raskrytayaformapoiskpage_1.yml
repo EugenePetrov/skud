@@ -1,0 +1,33 @@
+uuid: ac3a5e97-2f0b-4151-91b0-ab539e453839
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.poisk
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'block-search search-persistent container search-page'
+id: skud_mb_raskrytayaformapoiskpage_1
+theme: skud_mb
+region: content
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:poisk-page_1'
+settings:
+  id: 'views_exposed_filter_block:poisk-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,7 @@
+uuid: d008f684-5032-4729-9816-386905a9a470
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_novost_form
+captchaType: default
+label: null

@@ -1,0 +1,21 @@
+uuid: b95e6cdb-36ed-42fd-bf41-06b5ddae33c4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ssylka_na_video
+    - node.type.novost
+  module:
+    - text
+id: node.novost.field_ssylka_na_video
+field_name: field_ssylka_na_video
+entity_type: node
+bundle: novost
+label: 'Ссылка на видео'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

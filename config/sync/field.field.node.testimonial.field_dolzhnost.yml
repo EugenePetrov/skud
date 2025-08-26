@@ -1,0 +1,19 @@
+uuid: da3a2bde-e6bb-4dad-b6cf-979be412e3e0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dolzhnost
+    - node.type.testimonial
+id: node.testimonial.field_dolzhnost
+field_name: field_dolzhnost
+entity_type: node
+bundle: testimonial
+label: Должность
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 60d57a3d-5118-4aea-b884-ff6ffde848cb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Новость
+type: novost
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: a819d986-e3ca-4e67-bb7c-4f3a078ba69e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gotovoe_reshenie
+    - node.type.resheniya
+  module:
+    - entity_reference_revisions
+id: node.resheniya.field_gotovoe_reshenie
+field_name: field_gotovoe_reshenie
+entity_type: node
+bundle: resheniya
+label: 'Готовые решения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      gotovye_resheniya:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

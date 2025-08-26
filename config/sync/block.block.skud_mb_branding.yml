@@ -1,0 +1,29 @@
+uuid: 6eaa0cec-3089-4e82-8384-c2c459bda0b0
+langcode: ru
+status: false
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-branding'
+_core:
+  default_config_hash: qNdBRt3iBuuN5KfqglVCe4_5-jzvMcLMWObZ5IDyTGs
+id: skud_mb_branding
+theme: skud_mb
+region: navbar
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

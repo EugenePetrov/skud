@@ -1,0 +1,24 @@
+uuid: ce3f31ac-75e7-40ce-9161-80dd764f4188
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_formats
+    - node.type.produkt
+  module:
+    - text
+id: node.produkt.field_card_formats
+field_name: field_card_formats
+entity_type: node
+bundle: produkt
+label: 'Поддерживаемые форматы карт'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>MIFARE (UID), Mifare Mini, Mifare Classic, Mifare Plus<br />\r\nSL1/SL3, Mifare DESFire<br />\r\nI-CODE (ISO15693) (UID)<br />\r\nEM-Marine (UID)<br />\r\nHID 125 кГц (UID)<br />\r\nIndala (Motorola) (UID)<br />\r\nNFC и BLE (при установке приложения на ОС<br />\r\nAndroid)<br />\r\n&nbsp;</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

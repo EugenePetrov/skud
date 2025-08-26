@@ -1,0 +1,67 @@
+uuid: b4500f6e-1539-4055-af64-2552a0902261
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.novost.body
+    - field.field.node.novost.field_data_novosti
+    - field.field.node.novost.field_ssylka_na_istochnik
+    - node.type.novost
+  module:
+    - node
+id: agrg_news_content
+label: 'AGRG News Content'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: true
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: syndication
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  langcode: ru
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: novost
+custom_sources:
+  podrobnee_:
+    label: Подробнее...
+    value: Подробнее...
+    machine_name: podrobnee_
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: content
+      summary: ''
+    settings:
+      format: full_html
+  -
+    target: field_ssylka_na_istochnik
+    map:
+      uri: url
+      title: podrobnee_
+  -
+    target: field_data_novosti
+    map:
+      value: timestamp
+    settings:
+      timezone: UTC

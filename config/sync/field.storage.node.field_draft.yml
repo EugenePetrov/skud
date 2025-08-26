@@ -1,0 +1,19 @@
+uuid: a871e937-0ca7-4bd0-b0b8-a02918adbc75
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_draft
+field_name: field_draft
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

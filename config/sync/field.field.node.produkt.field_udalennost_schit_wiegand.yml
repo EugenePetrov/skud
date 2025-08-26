@@ -1,0 +1,19 @@
+uuid: 4dca12d4-19ba-4d04-a8c0-e9473c770d36
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_udalennost_schit_wiegand
+    - node.type.produkt
+id: node.produkt.field_udalennost_schit_wiegand
+field_name: field_udalennost_schit_wiegand
+entity_type: node
+bundle: produkt
+label: 'Удаленность считывателя от контроллера в режимах Wiegand, не более, м'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

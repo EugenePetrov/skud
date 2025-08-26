@@ -1,0 +1,21 @@
+uuid: 717be34b-8e7a-429e-8163-c7baead78bcd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maksimalnaya_dlina_linii_s
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_maksimalnaya_dlina_linii_s
+field_name: field_maksimalnaya_dlina_linii_s
+entity_type: node
+bundle: produkt
+label: 'Максимальная длина линии связи'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

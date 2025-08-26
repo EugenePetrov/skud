@@ -1,0 +1,19 @@
+uuid: 26064125-9186-4248-962d-784a0c20fd34
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ssylka_na_video
+field_name: field_ssylka_na_video
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

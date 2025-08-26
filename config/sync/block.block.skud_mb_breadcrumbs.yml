@@ -1,0 +1,22 @@
+uuid: 43f01509-44fb-4375-a602-b08ba42c658d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: gVAdTFIVDVBEkKwf92s60qQxHrlrxSfsASOK5A9W2Us
+id: skud_mb_breadcrumbs
+theme: skud_mb
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

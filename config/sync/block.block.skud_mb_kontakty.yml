@@ -1,0 +1,29 @@
+uuid: 1c0267f1-5eef-4caa-b773-0ef665390783
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbfaba6b-c545-4e44-82a7-b869bf0ae5dd'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'cell-sm-6 cell-lg-4 cell-xl-4 offset-top-40 offset-lg-top-0'
+id: skud_mb_kontakty
+theme: skud_mb
+region: footer_content
+weight: -16
+provider: null
+plugin: 'block_content:bbfaba6b-c545-4e44-82a7-b869bf0ae5dd'
+settings:
+  id: 'block_content:bbfaba6b-c545-4e44-82a7-b869bf0ae5dd'
+  label: Контакты
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

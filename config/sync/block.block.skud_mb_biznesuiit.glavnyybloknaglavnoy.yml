@@ -1,0 +1,31 @@
+uuid: 6994fa04-332f-4bec-9921-c9709486fc6f
+langcode: ru
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:cd8f661a-9120-4b5b-9e46-d3078bd70810'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_biznesuiit.glavnyybloknaglavnoy
+theme: skud_mb
+region: after_main
+weight: -6
+provider: null
+plugin: 'block_content:cd8f661a-9120-4b5b-9e46-d3078bd70810'
+settings:
+  id: 'block_content:cd8f661a-9120-4b5b-9e46-d3078bd70810'
+  label: 'Бизнесу и ИТ. Главный блок на главной'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

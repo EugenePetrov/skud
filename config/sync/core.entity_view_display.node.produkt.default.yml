@@ -1,0 +1,308 @@
+uuid: 2e07991b-b6ef-4b37-8b08-7b7dc1a880b9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.produkt.body
+    - field.field.node.produkt.field_card_formats
+    - field.field.node.produkt.field_cvet_korpusa
+    - field.field.node.produkt.field_doc_description
+    - field.field.node.produkt.field_dokumentaciya
+    - field.field.node.produkt.field_dokumentaciya_ssylka
+    - field.field.node.produkt.field_energonezavisimaya_pamyat
+    - field.field.node.produkt.field_garantiya_proizvoditelya
+    - field.field.node.produkt.field_glubina_stoyki_19_shkafa
+    - field.field.node.produkt.field_image_page
+    - field.field.node.produkt.field_interfeys_schityvateley
+    - field.field.node.produkt.field_interfeys_svyazi_list
+    - field.field.node.produkt.field_intro
+    - field.field.node.produkt.field_intro_long
+    - field.field.node.produkt.field_klass_zaschity_korpusa
+    - field.field.node.produkt.field_knopka_kupit_ssylka
+    - field.field.node.produkt.field_kody_klavish
+    - field.field.node.produkt.field_maksimalnaya_dlina_linii_s
+    - field.field.node.produkt.field_maksimalnoe_potreblenie_ma
+    - field.field.node.produkt.field_massa_schityvatelya_g_ne_b
+    - field.field.node.produkt.field_metatag
+    - field.field.node.produkt.field_minimalnoe_rasstoyanie_mez
+    - field.field.node.produkt.field_potreblyaemyy_tok_bez_indi
+    - field.field.node.produkt.field_potreblyaemyy_tok_s_vklyuc
+    - field.field.node.produkt.field_product_type
+    - field.field.node.produkt.field_razmery_dkhshkhv_mm
+    - field.field.node.produkt.field_tekst_pod_kartinkoy_sprava
+    - field.field.node.produkt.field_temperaturnyy_rezhim
+    - field.field.node.produkt.field_top_banner
+    - field.field.node.produkt.field_udalennost_schit_wiegand
+    - field.field.node.produkt.field_udalennost_schityvatelya_o
+    - field.field.node.produkt.field_upravlenie_ustroystvami
+    - field.field.node.produkt.field_voltage_dc
+    - field.field.node.produkt.field_vstroennyy_akkumulyator
+    - node.type.produkt
+  module:
+    - file
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.produkt.default
+targetEntityType: node
+bundle: produkt
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_card_formats:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cvet_korpusa:
+    weight: 29
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_doc_description:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dokumentaciya:
+    weight: 5
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_dokumentaciya_ssylka:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_energonezavisimaya_pamyat:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_garantiya_proizvoditelya:
+    weight: 30
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_glubina_stoyki_19_shkafa:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_image_page:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_interfeys_schityvateley:
+    weight: 22
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_interfeys_svyazi_list:
+    weight: 21
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_intro:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_intro_long:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_klass_zaschity_korpusa:
+    weight: 24
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_knopka_kupit_ssylka:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_kody_klavish:
+    weight: 23
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_maksimalnaya_dlina_linii_s:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_maksimalnoe_potreblenie_ma:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_massa_schityvatelya_g_ne_b:
+    weight: 28
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_minimalnoe_rasstoyanie_mez:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_potreblyaemyy_tok_bez_indi:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_potreblyaemyy_tok_s_vklyuc:
+    weight: 18
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_razmery_dkhshkhv_mm:
+    weight: 27
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tekst_pod_kartinkoy_sprava:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_temperaturnyy_rezhim:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_udalennost_schit_wiegand:
+    weight: 26
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_udalennost_schityvatelya_o:
+    weight: 25
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_upravlenie_ustroystvami:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_voltage_dc:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_vstroennyy_akkumulyator:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_metatag: true
+  field_product_type: true
+  field_top_banner: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,296 @@
+uuid: 1a78a1cd-d6de-4267-896c-393561ffb633
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_dokumentaciya
+    - field.storage.node.field_dokumentaciya_ssylka
+    - field.storage.node.field_dolzhnost
+    - field.storage.node.field_energonezavisimaya_pamyat
+    - field.storage.node.field_garantiya_proizvoditelya
+    - field.storage.node.field_glubina_stoyki_19_shkafa
+    - field.storage.node.field_image
+    - field.storage.node.field_imya
+    - field.storage.node.field_interfeys_schityvateley
+    - field.storage.node.field_interfeys_svyazi_list
+    - field.storage.node.field_intro
+    - field.storage.node.field_knopka_kupit_ssylka
+    - field.storage.node.field_kompaniya
+    - field.storage.node.field_ssylka_na_istochnik
+    - field.storage.node.field_temperaturnyy_rezhim
+    - field.storage.node.field_upravlenie_ustroystvami
+    - field.storage.node.field_vstroennyy_akkumulyator
+    - field.storage.node.field_image_page
+    - search_api.server.search_db
+  module:
+    - node
+    - search_api
+    - block_content
+id: global
+name: Global
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_dokumentaciya:
+    label: Документация
+    datasource_id: 'entity:node'
+    property_path: field_dokumentaciya
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_dokumentaciya
+  field_dokumentaciya_ssylka:
+    label: 'Документация ссылка'
+    datasource_id: 'entity:node'
+    property_path: field_dokumentaciya_ssylka
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_dokumentaciya_ssylka
+  field_dolzhnost:
+    label: Должность
+    datasource_id: 'entity:node'
+    property_path: field_dolzhnost
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_dolzhnost
+  field_energonezavisimaya_pamyat:
+    label: 'Энергонезависимая память'
+    datasource_id: 'entity:node'
+    property_path: field_energonezavisimaya_pamyat
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_energonezavisimaya_pamyat
+  field_garantiya_proizvoditelya:
+    label: 'Гарантия производителя'
+    datasource_id: 'entity:node'
+    property_path: field_garantiya_proizvoditelya
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_garantiya_proizvoditelya
+  field_glubina_stoyki_19_shkafa:
+    label: 'Глубина стойки 19" / шкафа'
+    datasource_id: 'entity:node'
+    property_path: field_glubina_stoyki_19_shkafa
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_glubina_stoyki_19_shkafa
+  field_image:
+    label: Изображение
+    datasource_id: 'entity:node'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image
+  field_imya:
+    label: Имя
+    datasource_id: 'entity:node'
+    property_path: field_imya
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_imya
+  field_interfeys_schityvateley:
+    label: 'Интерфейс считывателей'
+    datasource_id: 'entity:node'
+    property_path: field_interfeys_schityvateley
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_interfeys_schityvateley
+  field_interfeys_svyazi_list:
+    label: 'Интерфейс связи'
+    datasource_id: 'entity:node'
+    property_path: field_interfeys_svyazi_list
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_interfeys_svyazi_list
+  field_intro:
+    label: Интро
+    datasource_id: 'entity:node'
+    property_path: field_intro
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_intro
+  field_knopka_kupit_ssylka:
+    label: 'Кнопка Купить Ссылка'
+    datasource_id: 'entity:node'
+    property_path: field_knopka_kupit_ssylka
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_knopka_kupit_ssylka
+  field_kompaniya:
+    label: Компания
+    datasource_id: 'entity:node'
+    property_path: field_kompaniya
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_kompaniya
+  field_ssylka_na_istochnik:
+    label: 'Ссылка на источник'
+    datasource_id: 'entity:node'
+    property_path: field_ssylka_na_istochnik
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ssylka_na_istochnik
+  field_temperaturnyy_rezhim:
+    label: 'Температурный режим'
+    datasource_id: 'entity:node'
+    property_path: field_temperaturnyy_rezhim
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_temperaturnyy_rezhim
+  field_upravlenie_ustroystvami:
+    label: 'Управление устройствами'
+    datasource_id: 'entity:node'
+    property_path: field_upravlenie_ustroystvami
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_upravlenie_ustroystvami
+  field_vstroennyy_akkumulyator:
+    label: 'Встроенный аккумулятор'
+    datasource_id: 'entity:node'
+    property_path: field_vstroennyy_akkumulyator
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_vstroennyy_akkumulyator
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  title_1:
+    label: 'Изображение » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_image:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_image
+  title_2:
+    label: 'Изображение справа на странице » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_image_page:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_image_page
+datasource_settings:
+  'entity:block_content':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  language_with_fallback: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - body
+      - field_dokumentaciya
+      - field_dolzhnost
+      - field_energonezavisimaya_pamyat
+      - field_garantiya_proizvoditelya
+      - field_glubina_stoyki_19_shkafa
+      - field_imya
+      - field_interfeys_schityvateley
+      - field_interfeys_svyazi_list
+      - field_intro
+      - field_kompaniya
+      - field_temperaturnyy_rezhim
+      - field_upravlenie_ustroystvami
+      - field_vstroennyy_akkumulyator
+      - title
+      - title_1
+      - title_2
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - body
+      - field_dokumentaciya
+      - field_dokumentaciya_ssylka
+      - field_dolzhnost
+      - field_energonezavisimaya_pamyat
+      - field_garantiya_proizvoditelya
+      - field_glubina_stoyki_19_shkafa
+      - field_imya
+      - field_interfeys_schityvateley
+      - field_interfeys_svyazi_list
+      - field_intro
+      - field_knopka_kupit_ssylka
+      - field_kompaniya
+      - field_ssylka_na_istochnik
+      - field_temperaturnyy_rezhim
+      - field_upravlenie_ustroystvami
+      - field_vstroennyy_akkumulyator
+      - title
+      - title_1
+      - title_2
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  rendered_item: {  }
+  aggregated_field: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 100
+server: search_db

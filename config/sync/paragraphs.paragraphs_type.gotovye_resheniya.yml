@@ -1,0 +1,9 @@
+uuid: c5d0808a-6c43-4d3b-bfe6-c0837b377b55
+langcode: ru
+status: true
+dependencies: {  }
+id: gotovye_resheniya
+label: 'Готовое решение'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

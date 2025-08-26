@@ -1,0 +1,21 @@
+uuid: 7197cb88-589f-481a-998f-514bae705467
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_potreblyaemyy_tok_bez_indi
+    - node.type.produkt
+id: node.produkt.field_potreblyaemyy_tok_bez_indi
+field_name: field_potreblyaemyy_tok_bez_indi
+entity_type: node
+bundle: produkt
+label: 'Потребляемый ток (без индикации), мА'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '10'
+default_value_callback: ''
+settings: {  }
+field_type: string

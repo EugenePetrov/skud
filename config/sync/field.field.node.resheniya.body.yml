@@ -1,0 +1,23 @@
+uuid: 92331ae7-cf42-40a7-aa60-4da752b927fc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.resheniya
+  module:
+    - text
+id: node.resheniya.body
+field_name: body
+entity_type: node
+bundle: resheniya
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

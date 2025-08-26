@@ -1,0 +1,15 @@
+uuid: c560f820-182f-4457-af81-ae25af3024d8
+langcode: ru
+status: true
+dependencies: {  }
+name: 610_x_390
+label: '610 x 390'
+effects:
+  03bbc5a8-92f1-4c67-bab6-ee04a8345d8a:
+    uuid: 03bbc5a8-92f1-4c67-bab6-ee04a8345d8a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 610
+      height: 390
+      anchor: center-center

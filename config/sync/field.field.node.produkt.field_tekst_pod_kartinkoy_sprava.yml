@@ -1,0 +1,21 @@
+uuid: 5e9d4399-305d-4b27-b52c-7be30fcecd26
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tekst_pod_kartinkoy_sprava
+    - node.type.produkt
+  module:
+    - text
+id: node.produkt.field_tekst_pod_kartinkoy_sprava
+field_name: field_tekst_pod_kartinkoy_sprava
+entity_type: node
+bundle: produkt
+label: 'Текст под картинкой справа'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

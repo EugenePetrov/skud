@@ -1,0 +1,20 @@
+uuid: 75fd80f7-52c0-4419-aee2-5898594dc69c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Статья
+type: article
+description: "Для верстки материалов в половину страницы на десктопах.\r\nBody - cell-lg-7\r\nКартинка справа - cell-lg-5"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

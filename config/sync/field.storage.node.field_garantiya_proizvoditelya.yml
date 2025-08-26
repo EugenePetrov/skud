@@ -1,0 +1,27 @@
+uuid: 9e2f1f66-6d70-479b-b30e-a1430e0ba104
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_garantiya_proizvoditelya
+field_name: field_garantiya_proizvoditelya
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '5 лет'
+      label: '5 лет'
+    -
+      value: '1 год'
+      label: '1 год'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

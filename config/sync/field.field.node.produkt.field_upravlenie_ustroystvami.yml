@@ -1,0 +1,23 @@
+uuid: 1fc6ad46-a1cc-4be2-b149-db7a451f4b15
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upravlenie_ustroystvami
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_upravlenie_ustroystvami
+field_name: field_upravlenie_ustroystvami
+entity_type: node
+bundle: produkt
+label: 'Управление устройствами'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

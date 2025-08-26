@@ -1,0 +1,31 @@
+uuid: 95fcf110-90be-4128-823c-2b59e762d5b1
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e0f106a-eff1-4f0f-8559-e06834a1dfd2'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_counters
+theme: skud_mb
+region: after_main
+weight: -13
+provider: null
+plugin: 'block_content:8e0f106a-eff1-4f0f-8559-e06834a1dfd2'
+settings:
+  id: 'block_content:8e0f106a-eff1-4f0f-8559-e06834a1dfd2'
+  label: Figures
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contact\r\n/o-nas/*\r\n/calcs\r\n/calcs/*"
+    negate: true
+    context_mapping: {  }

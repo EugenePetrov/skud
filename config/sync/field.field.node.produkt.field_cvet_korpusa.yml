@@ -1,0 +1,19 @@
+uuid: 3a89eefd-c22e-4756-92e1-6335ecad4832
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cvet_korpusa
+    - node.type.produkt
+id: node.produkt.field_cvet_korpusa
+field_name: field_cvet_korpusa
+entity_type: node
+bundle: produkt
+label: 'Цвет корпуса'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

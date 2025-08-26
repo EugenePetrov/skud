@@ -1,0 +1,19 @@
+uuid: f4c76502-0aef-4ec6-9e32-88dccbcd7503
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minimalnoe_rasstoyanie_mez
+    - node.type.produkt
+id: node.produkt.field_minimalnoe_rasstoyanie_mez
+field_name: field_minimalnoe_rasstoyanie_mez
+entity_type: node
+bundle: produkt
+label: 'Минимальное расстояние между двумя считывателями, см'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

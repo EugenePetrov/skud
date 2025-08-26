@@ -1,0 +1,31 @@
+uuid: 4cc8fb3c-80cb-4ca4-8006-60384fffec4b
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f39605b-2e4b-4dff-97af-1e13c2aa26b5'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_kontakty_2
+theme: skud_mb
+region: after_main
+weight: -9
+provider: null
+plugin: 'block_content:2f39605b-2e4b-4dff-97af-1e13c2aa26b5'
+settings:
+  id: 'block_content:2f39605b-2e4b-4dff-97af-1e13c2aa26b5'
+  label: 'Контакты и реквизиты'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /o-nas
+    negate: false
+    context_mapping: {  }

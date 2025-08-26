@@ -1,0 +1,24 @@
+uuid: 99a967a9-280d-4ed1-ad5b-fbe219d9403e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_glubina_stoyki_19_shkafa
+field_name: field_glubina_stoyki_19_shkafa
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Любая
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,72 @@
+uuid: 9ffde02f-519a-45f5-918d-91c1a166d926
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gotovye_resheniya.field_kartinka_resheniya
+    - field.field.paragraph.gotovye_resheniya.field_nazvanie_resheniya
+    - field.field.paragraph.gotovye_resheniya.field_opisanie_resheniya
+    - field.field.paragraph.gotovye_resheniya.field_skhema_podklyucheniya
+    - field.field.paragraph.gotovye_resheniya.field_smeta
+    - field.field.paragraph.gotovye_resheniya.field_stoimost
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.gotovye_resheniya
+  module:
+    - file
+    - image
+    - text
+id: paragraph.gotovye_resheniya.default
+targetEntityType: paragraph
+bundle: gotovye_resheniya
+mode: default
+content:
+  field_kartinka_resheniya:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_nazvanie_resheniya:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_opisanie_resheniya:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_skhema_podklyucheniya:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_smeta:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_stoimost:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,45 @@
+uuid: 170be3ef-09c8-40f7-9ff6-d09e23ebeec3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_interfeys_schityvateley
+field_name: field_interfeys_schityvateley
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '-'
+      label: '-'
+    -
+      value: 'Wiegand-26, Dallas Touch Memory'
+      label: 'Wiegand-26, Dallas Touch Memory'
+    -
+      value: '2'
+      label: Wiegand-26
+    -
+      value: '3'
+      label: 'Wiegand различной битности (w26, w34, w37, w40 , w42)'
+    -
+      value: '7'
+      label: 'W-26,34,37,40,42,58 (в секторном режиме до W-64)'
+    -
+      value: '6'
+      label: 'TM (DS1990A)'
+    -
+      value: '4'
+      label: Биометрические
+    -
+      value: '5'
+      label: 'Dallas Touch Memory'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

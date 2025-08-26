@@ -1,0 +1,27 @@
+uuid: bf23936d-3deb-450d-9934-ff4314b2ee7a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_energonezavisimaya_pamyat
+field_name: field_energonezavisimaya_pamyat
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '7000 ключей, 500 временных зон, 40000 событий'
+      label: '7000 ключей, 500 временных зон, 40000 событий'
+    -
+      value: '96000 ключей, 30000 временных зон, 400000 событий'
+      label: '96000 ключей, 30000 временных зон, 400000 событий'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

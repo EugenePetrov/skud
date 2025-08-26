@@ -1,0 +1,23 @@
+uuid: 6fc358b5-18bc-4c0f-8517-56fdc72835e8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_energonezavisimaya_pamyat
+    - node.type.produkt
+  module:
+    - options
+id: node.produkt.field_energonezavisimaya_pamyat
+field_name: field_energonezavisimaya_pamyat
+entity_type: node
+bundle: produkt
+label: 'Энергонезависимая память'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '7000 ключей, 500 временных зон, 40000 событий'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

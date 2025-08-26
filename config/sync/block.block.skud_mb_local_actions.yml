@@ -1,0 +1,20 @@
+uuid: c65556a1-4bd0-4fac-95cb-a884faffc2d8
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: aHcLAHVlqImoWiCRfNki5GjL-N8LpP0sqE_ULXluN7M
+id: skud_mb_local_actions
+theme: skud_mb
+region: content
+weight: -14
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

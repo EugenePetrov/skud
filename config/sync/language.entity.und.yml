@@ -1,0 +1,11 @@
+uuid: 58e0e250-fae3-4bf3-8e9a-28f441077204
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eNX6lLCKDaY83nCMh20My---y03KbiFlv802DKCCpvg
+id: und
+label: 'Не указано'
+direction: ltr
+weight: 2
+locked: true

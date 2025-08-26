@@ -1,0 +1,22 @@
+uuid: a205aed4-24e8-4520-86e8-3316cde8943e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.produkt
+id: node.produkt.promote
+field_name: promote
+entity_type: node
+bundle: produkt
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

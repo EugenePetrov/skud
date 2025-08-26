@@ -1,0 +1,31 @@
+uuid: 786f8892-ea2d-4b8d-b252-8f993fd9ec4f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - webform
+  theme:
+    - skud_mb
+id: vebforma_2
+theme: skud_mb
+region: after_main
+weight: -15
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Веб-форма Контакт'
+  provider: webform
+  label_display: '0'
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contact\r\n/price"
+    negate: false
+    context_mapping: {  }

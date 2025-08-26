@@ -1,0 +1,33 @@
+uuid: 4b06cae7-ea38-4bc3-bd43-9b6de1ccbf94
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_interfeys_svyazi_list
+field_name: field_interfeys_svyazi_list
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Ethernet
+      label: Ethernet
+    -
+      value: RS-485
+      label: RS-485
+    -
+      value: '2'
+      label: 'RS-485 с грозозащитой'
+    -
+      value: '3'
+      label: 'Ethernet, Wi-Fi'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 01df936b-1fcc-42d0-8b9c-57f4df5d3594
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_solutions
+label: 'Pathauto Solutions'
+type: 'canonical_entities:node'
+pattern: '/solutions/[node:title]'
+selection_criteria:
+  b58ba5d9-b632-4ef8-81e1-5d7c50fb35d5:
+    id: node_type
+    bundles:
+      resheniya: resheniya
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b58ba5d9-b632-4ef8-81e1-5d7c50fb35d5
+selection_logic: and
+weight: -5
+relationships: {  }

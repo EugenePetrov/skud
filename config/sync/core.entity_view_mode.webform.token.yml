@@ -1,0 +1,10 @@
+uuid: efd19478-66be-481c-a0ee-d5e74c87500f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - webform
+id: webform.token
+label: Токен
+targetEntityType: webform
+cache: true

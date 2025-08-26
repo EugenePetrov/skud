@@ -1,0 +1,25 @@
+uuid: 71b81cb9-e5ab-4ee4-8135-05a4bbd6ae36
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - material_base
+id: osnovnayanavigaciya
+theme: material_base
+region: navbar
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 48a5b839-dd17-4c8a-a70a-3d88d50f0a92
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:375d46b5-d790-460b-a6c4-2d406a47588c'
+  module:
+    - block_content
+    - system
+  theme:
+    - skud_mb
+id: skud_mb_nashipreimuschestva
+theme: skud_mb
+region: after_main
+weight: -11
+provider: null
+plugin: 'block_content:375d46b5-d790-460b-a6c4-2d406a47588c'
+settings:
+  id: 'block_content:375d46b5-d790-460b-a6c4-2d406a47588c'
+  label: 'Наши преимущества'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /o-nas
+    negate: false
+    context_mapping: {  }

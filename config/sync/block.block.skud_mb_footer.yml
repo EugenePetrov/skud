@@ -1,0 +1,27 @@
+uuid: b001d38b-64ef-4283-9517-931eb5fd525f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: VbOLxI0herjWzUW1gB2m7w-4-EBSRsTccpMVKPR-Dd8
+id: skud_mb_footer
+theme: skud_mb
+region: footer_content
+weight: -17
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Информация
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

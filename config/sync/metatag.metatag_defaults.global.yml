@@ -1,0 +1,15 @@
+uuid: 3a3bd0db-5c00-4732-9576-f99be6983a71
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  abstract: '[current-page:summary]'
+  robots: 'index, follow'
+  title: '[current-page:title] | [site:name]'
+  keywords: '[current-page:title]'
+  description: '[current-page:summary]'
+  canonical_url: '[current-page:url]'

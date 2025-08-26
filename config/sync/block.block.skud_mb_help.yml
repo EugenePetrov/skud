@@ -1,0 +1,22 @@
+uuid: 16449876-6391-46c8-ab5f-9c5977e1b31b
+langcode: ru
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - skud_mb
+_core:
+  default_config_hash: bH3KqT6adtfbHcwGE-frpAtCv8PrqNP4wkb0eTSCkD4
+id: skud_mb_help
+theme: skud_mb
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

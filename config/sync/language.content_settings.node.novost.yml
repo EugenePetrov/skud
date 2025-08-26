@@ -1,0 +1,11 @@
+uuid: 5d67969d-98c9-48ad-b547-fa0b41abd402
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+id: node.novost
+target_entity_type_id: node
+target_bundle: novost
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,39 @@
+uuid: 5b94fc27-4b43-4027-a73d-00604e4866b9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_klass_zaschity_korpusa
+field_name: field_klass_zaschity_korpusa
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: IP64
+    -
+      value: '1'
+      label: 'IP64 (выносной модуль)'
+    -
+      value: '2'
+      label: IP65
+    -
+      value: '3'
+      label: 'IP65 (базовый модуль)'
+    -
+      value: '4'
+      label: IP54
+    -
+      value: '5'
+      label: IP40
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 97700a35-a9c0-447d-8163-7500ca4ac860
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dokumentaciya
+    - node.type.produkt
+  module:
+    - file
+id: node.produkt.field_dokumentaciya
+field_name: field_dokumentaciya
+entity_type: node
+bundle: produkt
+label: Документация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: downloads/docs
+  file_extensions: 'txt doc docx pdf xls xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

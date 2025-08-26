@@ -1,0 +1,31 @@
+uuid: ce2bca68-4001-4cb8-ba08-f355696207c5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - skud_mb
+third_party_settings:
+  block_class:
+    classes: 'navbar-item navbar-menu invisible-md'
+_core:
+  default_config_hash: ONZZZnyZjD4ZThziVKX-K14DBleg5VriheGLV-EDTJQ
+id: skud_mb_main_menu
+theme: skud_mb
+region: navbar
+weight: -14
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

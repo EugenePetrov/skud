@@ -1,0 +1,45 @@
+uuid: f9d24b57-6525-4a4c-a502-4080556d6003
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_temperaturnyy_rezhim
+field_name: field_temperaturnyy_rezhim
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'От 0°C до +45°C'
+      label: 'От 0°C до +45°C'
+    -
+      value: '1'
+      label: 'От -10°C до +60°C'
+    -
+      value: '3'
+      label: 'От -40°C до +50°C'
+    -
+      value: 'От -35°C до +45°C'
+      label: 'От -35°C до +45°C'
+    -
+      value: '2'
+      label: 'От -40°C до +85°C'
+    -
+      value: '4'
+      label: 'От -50°C до +50°C'
+    -
+      value: '5'
+      label: 'От -60°C до +50°C'
+    -
+      value: '6'
+      label: 'От 0°C до +50°C'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

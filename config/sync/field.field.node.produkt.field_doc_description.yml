@@ -1,0 +1,21 @@
+uuid: 6282c582-9c28-4e31-9d73-784094866ab9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_description
+    - node.type.produkt
+  module:
+    - text
+id: node.produkt.field_doc_description
+field_name: field_doc_description
+entity_type: node
+bundle: produkt
+label: 'doc description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

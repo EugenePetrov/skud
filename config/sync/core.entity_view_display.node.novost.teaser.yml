@@ -1,0 +1,31 @@
+uuid: 29a46d67-c509-4d59-b063-405bd3e62f03
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.novost.body
+    - node.type.novost
+  module:
+    - text
+    - user
+id: node.novost.teaser
+targetEntityType: node
+bundle: novost
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

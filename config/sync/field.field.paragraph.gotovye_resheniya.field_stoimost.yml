@@ -1,0 +1,24 @@
+uuid: 36a4b420-7de5-422e-9c90-b7d905087d90
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stoimost
+    - paragraphs.paragraphs_type.gotovye_resheniya
+  module:
+    - text
+id: paragraph.gotovye_resheniya.field_stoimost
+field_name: field_stoimost
+entity_type: paragraph
+bundle: gotovye_resheniya
+label: Стоимость
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<p>83&nbsp;006&nbsp;₽</p><p>Общая стоимость с&nbsp;монтажом и ПО</p>'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

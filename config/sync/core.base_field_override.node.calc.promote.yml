@@ -1,0 +1,22 @@
+uuid: da889f79-e760-457a-90ac-c54f618089b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.calc
+id: node.calc.promote
+field_name: promote
+entity_type: node
+bundle: calc
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
