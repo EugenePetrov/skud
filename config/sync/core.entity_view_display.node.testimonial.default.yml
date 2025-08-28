@@ -21,50 +21,56 @@ bundle: testimonial
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_dolzhnost:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_image:
-    weight: 2
+    type: image
     label: hidden
     settings:
-      image_style: otzyv
       image_link: ''
+      image_style: otzyv
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 2
     region: content
   field_imya:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_kompaniya:
-    weight: 5
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_top_banner: true
   langcode: true
+  search_api_excerpt: true

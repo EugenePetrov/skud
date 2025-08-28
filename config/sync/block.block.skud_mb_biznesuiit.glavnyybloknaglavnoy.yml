@@ -18,14 +18,14 @@ plugin: 'block_content:cd8f661a-9120-4b5b-9e46-d3078bd70810'
 settings:
   id: 'block_content:cd8f661a-9120-4b5b-9e46-d3078bd70810'
   label: 'Бизнесу и ИТ. Главный блок на главной'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

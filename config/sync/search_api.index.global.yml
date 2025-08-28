@@ -11,6 +11,7 @@ dependencies:
     - field.storage.node.field_garantiya_proizvoditelya
     - field.storage.node.field_glubina_stoyki_19_shkafa
     - field.storage.node.field_image
+    - field.storage.node.field_image_page
     - field.storage.node.field_imya
     - field.storage.node.field_interfeys_schityvateley
     - field.storage.node.field_interfeys_svyazi_list
@@ -21,12 +22,10 @@ dependencies:
     - field.storage.node.field_temperaturnyy_rezhim
     - field.storage.node.field_upravlenie_ustroystvami
     - field.storage.node.field_vstroennyy_akkumulyator
-    - field.storage.node.field_image_page
     - search_api.server.search_db
   module:
-    - node
-    - search_api
     - block_content
+    - node
 id: global
 name: Global
 description: ''
@@ -217,8 +216,21 @@ datasource_settings:
       selected: {  }
 processor_settings:
   add_url: {  }
-  language_with_fallback: {  }
+  aggregated_field: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
   html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
     all_fields: false
     fields:
       - body
@@ -246,10 +258,10 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
   ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
     all_fields: false
     fields:
       - body
@@ -272,25 +284,13 @@ processor_settings:
       - title
       - title_1
       - title_2
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-  highlight:
-    highlight: always
-    highlight_partial: false
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
+  language_with_fallback: {  }
   rendered_item: {  }
-  aggregated_field: {  }
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 100
+  index_directly: true
+  track_changes_in_references: true
 server: search_db

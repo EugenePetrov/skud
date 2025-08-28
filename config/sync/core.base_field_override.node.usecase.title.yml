@@ -1,0 +1,18 @@
+uuid: 0404309a-486f-4311-91ba-1b1b00ddaaed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.usecase
+id: node.usecase.title
+field_name: title
+entity_type: node
+bundle: usecase
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

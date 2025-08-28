@@ -22,14 +22,14 @@ plugin: 'block_content:0b5ef5b3-898d-4b8c-a4a9-40a3ed83c5fe'
 settings:
   id: 'block_content:0b5ef5b3-898d-4b8c-a4a9-40a3ed83c5fe'
   label: navbar-search-toggle
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /search
     negate: true
     context_mapping: {  }
+    pages: /search

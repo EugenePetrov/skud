@@ -54,13 +54,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 40
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 4
@@ -68,245 +68,245 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_card_formats:
+    type: text_textarea
     weight: 19
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_cvet_korpusa:
+    type: string_textfield
     weight: 39
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_doc_description:
+    type: text_textarea
     weight: 13
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_dokumentaciya:
+    type: file_generic
     weight: 12
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_dokumentaciya_ssylka:
+    type: link_default
     weight: 14
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_energonezavisimaya_pamyat:
+    type: options_select
     weight: 18
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_garantiya_proizvoditelya:
+    type: options_select
     weight: 22
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_glubina_stoyki_19_shkafa:
+    type: options_select
     weight: 23
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_image_page:
+    type: image_image
     weight: 10
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_interfeys_schityvateley:
+    type: options_select
     weight: 32
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_interfeys_svyazi_list:
+    type: options_select
     weight: 31
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_intro:
+    type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_intro_long:
+    type: text_textarea
     weight: 2
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_klass_zaschity_korpusa:
+    type: options_select
     weight: 34
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_knopka_kupit_ssylka:
+    type: link_default
     weight: 11
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_kody_klavish:
+    type: string_textfield
     weight: 33
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_maksimalnaya_dlina_linii_s:
+    type: options_select
     weight: 16
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_maksimalnoe_potreblenie_ma:
+    type: string_textfield
     weight: 29
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_massa_schityvatelya_g_ne_b:
+    type: string_textfield
     weight: 38
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_metatag:
+    type: metatag_firehose
     weight: 27
+    region: content
     settings:
       sidebar: true
     third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_minimalnoe_rasstoyanie_mez:
+    type: string_textfield
     weight: 30
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_potreblyaemyy_tok_bez_indi:
+    type: string_textfield
     weight: 25
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_potreblyaemyy_tok_s_vklyuc:
+    type: string_textfield
     weight: 28
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_product_type:
+    type: options_select
     weight: 41
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_razmery_dkhshkhv_mm:
+    type: string_textfield
     weight: 37
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_tekst_pod_kartinkoy_sprava:
+    type: text_textarea
     weight: 15
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_temperaturnyy_rezhim:
+    type: options_select
     weight: 21
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_top_banner:
+    type: image_image
     weight: 9
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_udalennost_schit_wiegand:
+    type: string_textfield
     weight: 36
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_udalennost_schityvatelya_o:
+    type: string_textfield
     weight: 35
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_upravlenie_ustroystvami:
+    type: options_select
     weight: 17
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_voltage_dc:
+    type: string_textfield
     weight: 24
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_vstroennyy_akkumulyator:
+    type: options_select
     weight: 20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   path:
     type: path
     weight: 7
@@ -315,24 +315,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 5
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 8
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -345,12 +345,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 3
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 26

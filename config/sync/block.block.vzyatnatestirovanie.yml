@@ -18,14 +18,14 @@ plugin: 'block_content:b4e99750-5552-4422-bb78-06938b712aab'
 settings:
   id: 'block_content:b4e99750-5552-4422-bb78-06938b712aab'
   label: 'Взять на тестирование'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

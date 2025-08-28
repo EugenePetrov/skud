@@ -17,8 +17,8 @@ plugin: 'block_content:242e75ac-ebc5-4759-87c8-3442b7d32e1e'
 settings:
   id: 'block_content:242e75ac-ebc5-4759-87c8-3442b7d32e1e'
   label: Policy
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

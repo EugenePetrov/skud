@@ -24,39 +24,41 @@ bundle: page
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  breadcrumb:
     settings: {  }
     third_party_settings: {  }
-  breadcrumb:
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_image_page:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: 610_x_390
       image_link: ''
+      image_style: 610_x_390
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_intro:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  links:
-    weight: 3
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

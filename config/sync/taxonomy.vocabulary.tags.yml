@@ -8,3 +8,4 @@ name: Теги
 vid: tags
 description: 'Используйте метки для группировки статей по темам.'
 weight: 0
+new_revision: false

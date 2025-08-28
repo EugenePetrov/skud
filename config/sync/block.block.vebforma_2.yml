@@ -18,14 +18,14 @@ plugin: webform_block
 settings:
   id: webform_block
   label: 'Веб-форма Контакт'
-  provider: webform
   label_display: '0'
+  provider: webform
   webform_id: contact
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: "/contact\r\n/price"
     negate: false
     context_mapping: {  }
+    pages: "/contact\r\n/price"

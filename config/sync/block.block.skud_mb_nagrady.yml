@@ -18,14 +18,14 @@ plugin: 'block_content:b5488701-c3f5-4a5d-8972-ff556502f239'
 settings:
   id: 'block_content:b5488701-c3f5-4a5d-8972-ff556502f239'
   label: Награды
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/o-nas\r\n<front>"
     negate: false
     context_mapping: {  }
+    pages: "/o-nas\r\n<front>"

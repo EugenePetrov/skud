@@ -1,0 +1,41 @@
+uuid: c21ff7ac-6c71-4054-8276-6d7a07e07d96
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.usecase.body
+    - field.field.node.usecase.field_image_description
+    - field.field.node.usecase.field_image_multiple
+    - field.field.node.usecase.field_vybor_produkta
+    - node.type.usecase
+  module:
+    - text
+    - user
+id: node.usecase.teaser
+targetEntityType: node
+bundle: usecase
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_image_description: true
+  field_image_multiple: true
+  field_vybor_produkta: true
+  langcode: true
+  search_api_excerpt: true

@@ -18,14 +18,14 @@ plugin: 'block_content:8e0f106a-eff1-4f0f-8559-e06834a1dfd2'
 settings:
   id: 'block_content:8e0f106a-eff1-4f0f-8559-e06834a1dfd2'
   label: Figures
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/contact\r\n/o-nas/*\r\n/calcs\r\n/calcs/*"
     negate: true
     context_mapping: {  }
+    pages: "/contact\r\n/o-nas/*\r\n/calcs\r\n/calcs/*"

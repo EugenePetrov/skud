@@ -21,8 +21,8 @@ plugin: 'block_content:58ad2b2a-305a-4fd2-a5cb-50817cd4e76d'
 settings:
   id: 'block_content:58ad2b2a-305a-4fd2-a5cb-50817cd4e76d'
   label: 'О компании'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full

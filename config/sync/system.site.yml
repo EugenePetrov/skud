@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: ru
 uuid: 75a41563-dad1-4a3b-949d-028804e1685f
 name: skud.agrg.ru
 mail: admin@agrg.ru
@@ -8,8 +11,5 @@ page:
   front: /node/24
 admin_compact_mode: false
 weight_select_max: 100
-langcode: ru
 default_langcode: ru
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 mail_notification: ''

@@ -1,0 +1,45 @@
+maxlength_block_class_field: 255
+field_type: multiple_textfields
+default_case: standard
+allow_only_letters_and_numbers: false
+block_classes_stored:
+  - shell
+  - section-75
+  - section-md-120
+  - section-xl-130
+  - navbar-item
+  - block-search
+  - search-persistent
+  - hidden
+  - container
+  - search-page
+  - footer-item
+  - cell-sm-12
+  - cell-lg-6
+  - navbar-search-toggle
+  - navbar-menu
+  - invisible-md
+  - cell-sm-6
+  - cell-lg-4
+  - cell-xl-4
+  - offset-top-40
+  - offset-lg-top-0
+  - navbar-branding
+  - navbar-account-menu
+  - pull-right
+  - pull-center
+  - navbar-calc-toggle
+enable_attributes: true
+enable_auto_complete: true
+qty_classes_per_block: 10
+items_per_page: 50
+enable_special_chars: true
+qty_attributes_per_block: 10
+enable_id_replacement: true
+weight_attributes: null
+weight_class: null
+weight_id: null
+maxlength_attributes: 255
+attribute_keys_stored: '[]'
+attribute_value_stored: '[]'
+attributes_inline: '[]'

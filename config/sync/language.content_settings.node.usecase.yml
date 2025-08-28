@@ -1,0 +1,11 @@
+uuid: 2a81814c-b6fd-4662-a2bb-0f380ecc1e5b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.usecase
+id: node.usecase
+target_entity_type_id: node
+target_bundle: usecase
+default_langcode: site_default
+language_alterable: false

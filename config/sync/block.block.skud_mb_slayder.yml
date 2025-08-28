@@ -18,14 +18,14 @@ plugin: 'block_content:3b49a660-a606-4241-920b-23e7226cf7db'
 settings:
   id: 'block_content:3b49a660-a606-4241-920b-23e7226cf7db'
   label: Слайдер
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

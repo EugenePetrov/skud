@@ -18,14 +18,14 @@ plugin: 'block_content:0d2f20c6-54dd-4ce8-86a2-f946a587048e'
 settings:
   id: 'block_content:0d2f20c6-54dd-4ce8-86a2-f946a587048e'
   label: Знакомьтесь!
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/o-nas\r\n/o-nas/nasha-komanda"
     negate: false
     context_mapping: {  }
+    pages: "/o-nas\r\n/o-nas/nasha-komanda"

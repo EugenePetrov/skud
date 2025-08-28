@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: '/news/[node:title]'
 selection_criteria:
   f3aa616d-bf20-4eb9-a0ff-0f2980f8e0db:
-    id: node_type
-    bundles:
-      novost: novost
+    id: 'entity_bundle:node'
     negate: false
+    uuid: f3aa616d-bf20-4eb9-a0ff-0f2980f8e0db
     context_mapping:
       node: node
-    uuid: f3aa616d-bf20-4eb9-a0ff-0f2980f8e0db
+    bundles:
+      novost: novost
 selection_logic: and
 weight: -5
 relationships: {  }

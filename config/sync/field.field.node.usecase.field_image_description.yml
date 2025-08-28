@@ -1,0 +1,19 @@
+uuid: 27342f3f-dfa8-40e7-a1e0-ffe5662f2c20
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_description
+    - node.type.usecase
+id: node.usecase.field_image_description
+field_name: field_image_description
+entity_type: node
+bundle: usecase
+label: 'Описание картинки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

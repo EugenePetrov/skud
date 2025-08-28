@@ -21,8 +21,8 @@ plugin: 'block_content:bbfaba6b-c545-4e44-82a7-b869bf0ae5dd'
 settings:
   id: 'block_content:bbfaba6b-c545-4e44-82a7-b869bf0ae5dd'
   label: Контакты
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full

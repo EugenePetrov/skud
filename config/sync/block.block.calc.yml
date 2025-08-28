@@ -21,8 +21,8 @@ plugin: 'block_content:8c05408c-1fad-4f93-a272-9c08a6ef7ed0'
 settings:
   id: 'block_content:8c05408c-1fad-4f93-a272-9c08a6ef7ed0'
   label: calc
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

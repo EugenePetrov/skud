@@ -52,30 +52,32 @@ mode: teaser
 content:
   field_image_page:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings:
       image_class:
         class: ''
+    weight: 0
+    region: content
   field_intro:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_intro_long:
     type: text_default
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   body: true
   entity_print_view_epub: true

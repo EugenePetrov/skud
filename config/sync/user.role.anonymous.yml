@@ -1,7 +1,13 @@
 uuid: 54ff1a2e-94b8-4664-ab9e-66c4eb89a390
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - filter
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -11,6 +17,4 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access pwa'
-  - 'search content'
   - 'use text format restricted_html'

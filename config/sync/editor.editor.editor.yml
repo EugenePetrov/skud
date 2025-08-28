@@ -40,17 +40,7 @@ settings:
             - Table
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
-    tokenbrowser:
-      token_types: {  }
 image_upload:
   status: false
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null

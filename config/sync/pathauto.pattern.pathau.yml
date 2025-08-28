@@ -10,14 +10,14 @@ type: 'canonical_entities:node'
 pattern: '[node:menu-link:parent:title]/[node:title]'
 selection_criteria:
   2530c200-2420-49e4-9610-7b4cf1002076:
-    id: node_type
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 2530c200-2420-49e4-9610-7b4cf1002076
+    context_mapping:
+      node: node
     bundles:
       page: page
       article: article
-    negate: false
-    context_mapping:
-      node: node
-    uuid: 2530c200-2420-49e4-9610-7b4cf1002076
 selection_logic: and
 weight: -5
 relationships: {  }

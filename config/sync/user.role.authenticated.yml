@@ -1,7 +1,16 @@
 uuid: 4a31ba8e-c541-4d0f-a517-8b346ace81fb
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+  module:
+    - comment
+    - file
+    - filter
+    - shortcut
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -11,9 +20,9 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access pwa'
   - 'access shortcuts'
+  - 'delete own files'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'use text format webform_default'

@@ -18,14 +18,14 @@ plugin: webform_block
 settings:
   id: webform_block
   label: 'Веб-форма калькулятора'
-  provider: webform
   label_display: '0'
+  provider: webform
   webform_id: kalkulyator_skud
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: /calcs/kalkulyator-skud-na-dveri
     negate: false
     context_mapping: {  }
+    pages: /calcs/kalkulyator-skud-na-dveri

@@ -51,44 +51,44 @@ bundle: produkt
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 31
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 31
     region: content
   field_card_formats:
-    weight: 13
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 13
     region: content
   field_cvet_korpusa:
-    weight: 29
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 29
     region: content
   field_doc_description:
-    weight: 6
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 6
     region: content
   field_dokumentaciya:
-    weight: 5
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 5
     region: content
   field_dokumentaciya_ssylka:
-    weight: 7
+    type: link
     label: hidden
     settings:
       trim_length: null
@@ -97,76 +97,78 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    type: link
+    weight: 7
     region: content
   field_energonezavisimaya_pamyat:
-    weight: 11
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 11
     region: content
   field_garantiya_proizvoditelya:
-    weight: 30
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 30
     region: content
   field_glubina_stoyki_19_shkafa:
-    weight: 12
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 12
     region: content
   field_image_page:
-    weight: 3
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 3
     region: content
   field_interfeys_schityvateley:
-    weight: 22
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 22
     region: content
   field_interfeys_svyazi_list:
-    weight: 21
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 21
     region: content
   field_intro:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_intro_long:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_klass_zaschity_korpusa:
-    weight: 24
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 24
     region: content
   field_knopka_kupit_ssylka:
-    weight: 4
+    type: link_separate
     label: hidden
     settings:
       trim_length: 80
@@ -175,128 +177,128 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    type: link_separate
+    weight: 4
     region: content
   field_kody_klavish:
-    weight: 23
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 23
     region: content
   field_maksimalnaya_dlina_linii_s:
-    weight: 9
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 9
     region: content
   field_maksimalnoe_potreblenie_ma:
-    weight: 19
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 19
     region: content
   field_massa_schityvatelya_g_ne_b:
-    weight: 28
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 28
     region: content
   field_minimalnoe_rasstoyanie_mez:
-    weight: 20
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 20
     region: content
   field_potreblyaemyy_tok_bez_indi:
-    weight: 17
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 17
     region: content
   field_potreblyaemyy_tok_s_vklyuc:
-    weight: 18
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 18
     region: content
   field_razmery_dkhshkhv_mm:
-    weight: 27
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 27
     region: content
   field_tekst_pod_kartinkoy_sprava:
-    weight: 8
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 8
     region: content
   field_temperaturnyy_rezhim:
-    weight: 15
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 15
     region: content
   field_udalennost_schit_wiegand:
-    weight: 26
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 26
     region: content
   field_udalennost_schityvatelya_o:
-    weight: 25
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 25
     region: content
   field_upravlenie_ustroystvami:
-    weight: 10
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 10
     region: content
   field_voltage_dc:
-    weight: 16
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 16
     region: content
   field_vstroennyy_akkumulyator:
-    weight: 14
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 14
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

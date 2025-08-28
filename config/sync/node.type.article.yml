@@ -14,7 +14,7 @@ _core:
 name: Статья
 type: article
 description: "Для верстки материалов в половину страницы на десктопах.\r\nBody - cell-lg-7\r\nКартинка справа - cell-lg-5"
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

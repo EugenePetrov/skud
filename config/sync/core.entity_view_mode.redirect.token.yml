@@ -6,5 +6,6 @@ dependencies:
     - redirect
 id: redirect.token
 label: Токен
+description: ''
 targetEntityType: redirect
 cache: true

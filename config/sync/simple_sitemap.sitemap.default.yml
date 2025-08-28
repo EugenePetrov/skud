@@ -1,0 +1,11 @@
+uuid: 34bf74af-577a-4a12-85e8-5e2474733134
+langcode: ru
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.default_hreflang
+id: default
+label: Default
+description: null
+type: default_hreflang
+weight: 0

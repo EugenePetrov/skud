@@ -17,8 +17,8 @@ plugin: 'block_content:29f3158c-1d82-4856-81c7-36bc1acb955b'
 settings:
   id: 'block_content:29f3158c-1d82-4856-81c7-36bc1acb955b'
   label: Counters
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

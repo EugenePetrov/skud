@@ -18,14 +18,14 @@ plugin: 'block_content:375d46b5-d790-460b-a6c4-2d406a47588c'
 settings:
   id: 'block_content:375d46b5-d790-460b-a6c4-2d406a47588c'
   label: 'Наши преимущества'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /o-nas
     negate: false
     context_mapping: {  }
+    pages: /o-nas
